@@ -18,7 +18,7 @@ public class StringHelper {
 			return true;
 		}
 		if (str.length() == 2) {
-			return false;
+			return false; //ABC
 		}
 		
 		String first2Chars = str.substring(0, 2);
