@@ -15,10 +15,10 @@ public class StringHelper {
 	
 	public boolean areFirstAndLastTwiCharactersTheSame(String str) {
 		if (str.length() <= 1) {
-			return false;
+			return true;
 		}
 		if (str.length() == 2) {
-			return true;
+			return false;
 		}
 		
 		String first2Chars = str.substring(0, 2);
