@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test HTML CSS JS</title>
+</head>
+<body>
+
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: help;
+}
+.button3 {background-color: #f44336;} /* Red */ 
+.button5 {background-color: #555555;} /* Black */
+.button6 {cursor: not-allowed;}
+
+.text1{
+	background-color:#e542f4;
+	color: white;
+	padding: 20px 20px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: default;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+.text2{background-color: #414df4;}
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+</style>
+
+<p class="text1 text2 displayed">Hello There</p>
+<br></br>
+<p id="changeDog" class="text1 displayed">Dog is Hidden</p>
+<br></br>
+<button onclick="showDogClick()" class="button button5 displayed">Show Dog</button>
+<button onclick="hideDogClick()" class="button button3 button6 displayed">Hide Dog</button>
+<br></br>
+<br></br>
+<br></br>
+
+	
+<img src="http://www.what-dog.net/Images/faces2/scroll0015.jpg" style="width:304px;height:228px;" class="displayed">
+<script>
+function showDogClick() {
+    document.getElementById("changeDog").innerHTML = 
+    	"<img src=\"http://www.what-dog.net/Images/faces2/scroll0015.jpg\" style=\"width:304px;height:228px;\" class=\"displayed\">";
+}
+
+function hideDogClick(){
+	document.getElementById("changeDog").innerHTML = "Dog is hidden";
+}
+</script>
+
+</body>
+</html>
