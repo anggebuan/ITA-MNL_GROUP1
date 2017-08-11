@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta Content-Type: text/html; charset=utf-8></meta>
+<title>JavaScript Exercise</title>
+</head>
+<body>
+<h1>Exercise12: Numeric Checker</h1>
+<p>12. Write a JavaScript function to check whether a variable is numeric or not.</p>
+<script>
+function is_Numeric(num) {
+  return !isNaN(parseFloat(num)) && isFinite(num);
+}
+
+document.writeln(is_Numeric(12));
+document.writeln(is_Numeric('abcd'));
+document.writeln(is_Numeric('12'));
+document.writeln(is_Numeric(' '));
+document.writeln(is_Numeric(1.20));
+document.writeln(is_Numeric(-200));
+</script>
+</body>
+</html>
