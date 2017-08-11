@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Exercise</title>
+</head>
+<body>
+<h1>Exercise6: Find area of a triangle</h1>
+<p>Write a JavaScript function to find the area of a triangle where lengths of the three of its sides are 5,6 and 7.</p>
+<p>Area of triangle is <p id="result"></p></p>
+
+<script>
+	var side1 = parseInt(window.prompt("Input side A"));
+	var side2 = parseInt(window.prompt("Input side B"));
+	var side3 = parseInt(window.prompt("Input side C"));
+	var perimeter = (side1+side2+side3)/2;
+	var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3)));5
+	document.getElementById("result").innerHTML = area;
+</script>
+</body>
+</html>
