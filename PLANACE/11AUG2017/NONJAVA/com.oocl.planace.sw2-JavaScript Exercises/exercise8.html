@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checking if leap year</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Input year: 
+	<input type="number" value="" id="year">
+	<br>
+	<input type="submit" value="Determine if Leap Year" onclick="factorial()">
+	</form> 
+	<p id="result"></p>
+	<script>
+	function factorial(){
+		var year = parseInt(document.getElementById("year").value);
+		var isLeap = false;
+		
+		if(year%400 === 0){
+			isLeap = true;
+		}
+		else if(year%100 === 0){
+			isLeap = false;
+		}
+		else if(year%4 === 0){
+			isLeap = true;
+		}
+			
+		if(isLeap){
+			document.getElementById("result").innerHTML = year + " is a leap year";
+		}
+		else{
+			document.getElementById("result").innerHTML = year + " is not a leap year";
+		}
+	}
+	</script>
+  </body>
+</html>

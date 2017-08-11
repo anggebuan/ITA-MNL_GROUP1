@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Display all prime factors</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Input Number: 
+	<input type="text" name="number" value="" id="inputNum" >
+	<br>
+	<input type="submit" value="Get all Prime Factors" onclick="getFactors()">
+	</form> 
+	<p id="result"></p>
+	
+	<script>
+	function getFactors()
+	{
+		var num = parseInt(document.getElementById("inputNum").value);
+		var result = "";
+		for (var x = 1; x<=num; x++)
+		{
+			var count = 0;
+			for(var y = x; y >=1; y--){
+				if(x%y === 0){
+					count = count + 1;
+				}
+			}
+			if(count === 2)
+			{
+				result = result + x + " ";
+			}
+		}
+		document.getElementById("result").innerHTML = result;
+	}
+	</script>
+  </body>
+</html>

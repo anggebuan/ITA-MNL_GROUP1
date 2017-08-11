@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Area of Triangle</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Side A: 
+	<input type="number" name="sideA" value="5" id="sideA" >
+	<br>
+	Side B: 
+	<input type="number" name="sideB" value="6" id="sideB" >
+	<br>
+	Side C: 
+	<input type="number" name="sideC" value="7" id="sideC" >
+	<br>
+	<input type="submit" value="Get Area" onclick="getArea()">
+	</form> 
+	<p id="result"></p>
+	
+	<script>
+	function getArea()
+	{
+		var sideA = parseInt(document.getElementById("sideA").value);
+		var sideB = parseInt(document.getElementById("sideB").value);
+		var sideC = parseInt(document.getElementById("sideC").value);
+		var semiperi = parseInt((sideA + sideB + sideC)/2);
+		var result = semiperi*(semiperi - sideA)*(semiperi - sideB)*(semiperi - sideC);
+		result = Math.sqrt(result);
+		document.getElementById("result").innerHTML = "Area is : " + result;
+	}
+	</script>
+  </body>
+</html>

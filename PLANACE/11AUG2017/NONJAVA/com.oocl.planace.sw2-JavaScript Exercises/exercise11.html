@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Get all possible combinations of characters in a string</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Input string: 
+	<input type="text" value="" id="sampleString">
+	<br>
+	<input type="submit" value="Get all combinations" onclick="getAllPossible()">
+	</form> 
+	<p id="result"></p>
+	<script>
+	function getAllPossible(){
+		var stringValue = document.getElementById("sampleString").value;
+		var result = "";
+		for(x = 0; x <= stringValue.length ; x++){
+			for(y = 0; y<= x; y++){
+				result = result + stringValue.substring(x,y)+ " ";
+			}
+		}
+		document.getElementById("result").innerHTML = result;
+	}
+	</script>
+  </body>
+</html>	

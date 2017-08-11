@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check if Number</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Input: 
+	<input type="text" name="number" value="" id="inputNum" >
+	<br>
+	<input type="submit" value="Check if number" onclick="checkIfNumber()">
+	</form> 
+	<p id="result"></p>
+	
+	<script>
+	function checkIfNumber()
+	{
+		var num = document.getElementById("inputNum").value;
+		var pattern = /(^'{0,1}[\+,\-]{0,1}\d+\.{0,1}\d*'{0,1}$)/;
+		if(num.match(pattern)){
+			document.getElementById("result").innerHTML = num + " is a numeric";
+		}
+		else
+			document.getElementById("result").innerHTML = num + " is not a numeric";
+	}
+	</script>
+  </body>
+</html>
