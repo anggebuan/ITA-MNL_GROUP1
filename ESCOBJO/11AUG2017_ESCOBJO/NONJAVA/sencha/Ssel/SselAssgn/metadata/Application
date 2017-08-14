@@ -1,0 +1,17 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "MyApp",
+        "views": [
+            "MyViewport",
+            "MyViewport1",
+            "MyViewport2"
+        ]
+    },
+    "designerId": "application"
+}

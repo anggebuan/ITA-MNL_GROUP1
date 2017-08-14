@@ -1,0 +1,124 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MyViewport"
+    },
+    "designerId": "9e7fccc9-7ca3-4a44-8f26-339a802e9c5f",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 361,
+                "layout": "absolute",
+                "title": "Planets",
+                "width": 362
+            },
+            "designerId": "a450c5b6-d56a-45d9-a980-4b583fcfba78",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 120,
+                        "layout|y": 240,
+                        "text": "Planet Page",
+                        "tooltip": [
+                            "\"Planet\""
+                        ]
+                    },
+                    "designerId": "c31aec17-6693-4e38-8bb5-ab7929621633",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "this.push(Ext.create('MyApp.view.MyViewport1',{\r",
+                                    "            title:'Test' }));"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "b155331f-56c3-42d8-9def-40ab4ba054db"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 140,
+                        "layout|y": 270,
+                        "text": "About",
+                        "tooltip": [
+                            "\"About me\""
+                        ]
+                    },
+                    "designerId": "5ef023e1-0ebd-4882-a96b-11bb2a6488a8",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "implHandler": [
+                                    "this.push(Ext.create('MyApp.view.MyViewport2',{\r",
+                                    "            title:'Test' }));"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "2bed1984-a273-4ba0-bf73-7ed34826430c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 220,
+                        "layout|x": 10,
+                        "layout|y": 10,
+                        "src": "nine-planets.jpg",
+                        "width": 340
+                    },
+                    "designerId": "e1799819-f375-4490-9901-b18b1556730e"
+                }
+            ]
+        }
+    ]
+}

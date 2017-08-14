@@ -1,0 +1,40 @@
+{
+    "name": "SselAssgn",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": "C:/Users/levie/OneDrive/Documents/Ssel/publish"
+    },
+    "xdsVersion": "3.0.4",
+    "xdsBuild": 1386,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "9e7fccc9-7ca3-4a44-8f26-339a802e9c5f",
+            "4cc27a4b-13fd-438c-9bf6-56f126af66a0",
+            "0af5c92a-3664-42b7-8684-d1b9e5ccd90a"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "c9c339d9-b2a3-4940-b5a8-c4e34701011f",
+            "833f7f5a-b692-492d-b2ae-c4cba216af63"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
