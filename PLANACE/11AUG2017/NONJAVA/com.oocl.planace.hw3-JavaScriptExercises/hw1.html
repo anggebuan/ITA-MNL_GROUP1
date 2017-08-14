@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rectangle</title>
+	<body onload="rectangle();">
+	
+	<canvas id="canvas" width="150" height="150"></canvas>
+	
+	</body>
+    <script>
+		function rectangle(){
+			var draw = document.getElementById("canvas");
+			if (draw.getContext) {
+				var context = draw.getContext("2d");
+
+				context.fillRect(20,20,100,100);
+				context.clearRect(40,40,60,60);
+				context.strokeRect(45,45,50,50);
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <!-- Content -->
+  </body>
+</html>

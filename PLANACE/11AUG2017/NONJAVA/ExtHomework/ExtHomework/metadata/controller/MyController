@@ -1,0 +1,69 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "d69274a8-e339-4d4b-a55a-00865b17c2ba",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLaunch",
+                "implHandler": [
+                    "this.oTXTYr = this.getView('year');\r",
+                    "this.oTXTmonth = this.getView('month');\r",
+                    "this.oTXTmoney = this.getView('money');\r",
+                    "this.oFormPanel= this.getView('#input');\r",
+                    "this.oSTRName = this.getStore('moneyStore');\r",
+                    "this.oGRIDNames = this.getView('#gridMoney');\r",
+                    ""
+                ]
+            },
+            "designerId": "935c2ad8-56ee-466c-98ed-a548d554389e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#addDetails",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onButtonClick",
+                "implHandler": [
+                    "console.log('i am click');\r",
+                    "\r",
+                    "var year = Ext.getCmp(\"year\").value;\r",
+                    "var month = Ext.getCmp(\"month\").value;\r",
+                    "var money = Ext.getCmp(\"money\").value;\r",
+                    "\r",
+                    "console.log(year);\r",
+                    "\r",
+                    "var oRecord = Ext.ModelManager.create({\r",
+                    "    \"year\" : year,\r",
+                    "    \"month\" : month,\r",
+                    "    \"money\" : money\r",
+                    "    },'ExtHomework.model.moneyModel');\r",
+                    "\r",
+                    "Ext.getStore('moneyStore').add(oRecord);\r",
+                    "this.getView('#gridMoney').refresh();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "f1c5e4f4-f2c2-4cb6-8c6b-bcf657e348fc"
+        }
+    ]
+}

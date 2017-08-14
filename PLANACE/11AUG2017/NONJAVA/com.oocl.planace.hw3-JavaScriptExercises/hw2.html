@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Intersecting Rectangles</title>
+	<body onload="intersect();">
+	
+	<canvas id="canvas" width="150" height="150"></canvas>
+	
+	</body>
+    <script>
+		function intersect(){
+			var draw = document.getElementById("canvas");
+			if (draw.getContext) {
+				var context = draw.getContext("2d");
+				
+				context.fillStyle = "rgb(256,0,0)";
+				context.fillRect (15, 10, 55, 50);
+        
+				context.fillStyle = "rgba(0, 0, 200, 0.5)";
+				context.fillRect (35, 30, 55, 50);
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <!-- Content -->
+  </body>
+</html>
