@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="BIG5">
+<link rel="stylesheet" type="text/css" href="D:/ESCOBJO/workspace/TryServlet/css/style.css"/>
+
+<title>Javascript Exercises</title>
+</head>
+<body bgcolor = green style="background-image:url('./back.jpg'); background-size: 50.5%">
+
+<font color = pink>
+
+<p align="center">
+
+
+  <br>
+  <h1 align=center>- - - - - - - - - - - - - - - Javascript Exercises - - - - - - - - - - - - - - - </h1>
+ <br>
+<p align=center > 
+<b>DATE TIME<br><br>
+<p align=center id="day"> </p>
+ <p align=center id="dateTime"> </p>
+  <p align=center id="date"> </p>
+   <p align=center > 
+  <input type=button onClick="dateTime()" value='Show Date Time'>
+  </p>
+  </p>
+
+<br>
+<p align="center">
+<b>FACTORIAL<br><br>
+Enter a number:<input type="text" id="number">
+<br />
+ <p align=center id="nums"> </p>
+  <p align=center id="ans"> </p>
+   <p align=center > 
+
+  <input type=button onClick="getval()" value='Show factorial'>
+
+<br /><br />
+<br><br>
+<b>THE REVERSE<br><br>
+Enter text:<input type="text" id="txt">
+<br />
+ <p align=center id="reverse"> </p>
+   <p align=center > 
+  <input type=button onClick="reverse()" value='Reverse Text'>
+
+ <br><br><br>
+<p align=center > 
+<b>PERMUTATION<br><br>
+Enter a text:<input type="text" id="splittxt">
+<br />
+ <p align=center id="split"> </p>
+   <p align=center > 
+  <input type=button onClick="permutation()" value='Permutate'>
+  </p>
+  </p>
+ 
+
+<br><br>
+<p align="center">
+<b>AREA OF A TRIANGLE<br><br>
+Enter base:<input type="text" id="base">
+Enter height:<input type="text" id="height">
+<br />
+ <p align=center id="areaTriangle"> </p>
+   <p align=center > 
+  <input type=button onClick="areaTriangle()" value='Calculate Area'>
+  </p>
+  </p>
+    
+  
+ 
+    <br><br>
+<p align=center > 
+<b>CAMELIZE<br><br>
+Enter a text:<input type="text" id="cameltxt">
+<br />
+ <p align=center id="camel"> </p>
+   <p align=center > 
+  <input type=button onClick="camel()" value='Camelize'>
+  </p>
+  </p>
+ 
+
+  
+        <br><br>
+<p align=center > 
+<b>PRIME FACTORS<br><br>
+Enter a number:<input type="text" id="prime">
+<br />
+ <p align=center id="primeList"> </p>
+   <p align=center > 
+  <input type=button onClick="primeNumbers()" value='Show List of Prime Numbers'>
+  </p>
+  </p>
+  
+  
+          <br><br>
+<p align=center > 
+<b>NUMERIC<br><br>
+Enter a text:<input type="text" id="numericTxt">
+<br />
+ <p align=center id="numeric"> </p>
+   <p align=center > 
+  <input type=button onClick="numeric()" value='Verify if Numeric'>
+  </p>
+  </p>
+  
+  
+  <br><br>
+<p align=center > 
+<b>LEAP YEAR<br><br>
+Enter a month:<input type="text" id="leapyrtxt">
+<br />
+ <p align=center id="leapyr"> </p>
+   <p align=center > 
+  <input type=button onClick="verifyLeapYr()" value='Verify Year'>
+  </p>
+  </p>
+<script>
+
+var valueFromField;
+function getval(){
+valueFromField = document.getElementById('number').value
+factorial(valueFromField);
+}
+
+		function factorial (valueFromField){
+		  var x;
+		var y = 1;
+		  for(x=1;x<=valueFromField;x++){
+		  
+			y = y*x;
+			//document.getElementById("nums").innerHTML=x;
+		  }
+
+		   document.getElementById("ans").innerHTML="Factorial of "+valueFromField+ " is " + y;
+	
+		}
+     
+ function reverse(){
+var valueFromField2 = document.getElementById('txt').value;
+//alert(valueFromField2);
+//return valueFromField2.split('').reverse().join('');
+var r = valueFromField2.split('').reverse().join('');
+document.getElementById("reverse").innerHTML="Reverse of "+valueFromField2+ " is " + r;
+}    
+
+function areaTriangle(){
+var valueFromField3 = document.getElementById('base').value;
+var valueFromField4 = document.getElementById('height').value;
+//alert(valueFromField2);
+//return valueFromField2.split('').reverse().join('');
+var area = 0.5*(valueFromField3 * valueFromField4);
+document.getElementById("areaTriangle").innerHTML="Area of triangle"+ " = " + area;
+}     
+
+function dateTime(){
+var valueFromField6 =document.getElementById('base').value;
+
+var date = new Date();
+  var day = date.getDay();
+  var hr = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+ var arrayDays = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var denotedTime = (hr >= 12)? " PM ":" AM ";
+  
+  hr = (hr >= 12)? hr - 12: hr;
+  if (hr===0 && denote===' PM ') 
+  { 
+	  if (min===0 && sec===0)
+	  { 
+	  hr=12;
+	  denotedTime=' Noon';
+	  } 
+	  else
+	  { 
+	  hr=12;
+	  denotedTime=' PM';
+	  } 
+  } 
+  
+  if (hr===0 && denotedTime===' AM ') 
+  { 
+	  if (min===0 && sec===0)
+	  { 
+	  hr=12;
+	  denotedTime=' Midnight';
+	  } 
+	  else
+	  { 
+	  hr=12;
+	  denotedTime=' AM';
+	  } 
+  } 
+//console.log("Current Time : "+hr + denotedTime + " : " + min + " : " + sec);
+ //console.log("Today is : " + arrayDays[day] + ".");  
+ var yr = date.getFullYear();
+ 
+ var month = new Array();
+month[0] = "January"; month[1] = "February";
+month[2] = "March"; month[3] = "April";
+month[4] = "May"; month[5] = "June";
+month[6] = "July"; month[7] = "August";
+month[8] = "September"; month[9] = "October";
+month[10] = "November"; month[11] = "December";
+var m = month[date.getMonth()];
+
+var da = date.getUTCDate();
+document.getElementById("day").innerHTML="Today is "+arrayDays[day] + ". ^__^" ;
+document.getElementById("date").innerHTML= "Date: "+ m +  " " + da +", "+yr;
+document.getElementById("dateTime").innerHTML="Current Time: "+hr + denotedTime + " : " + min+ " : " + sec;
+
+	}	
+
+function camel() {
+		
+			var valueFromField7 = (document.getElementById("cameltxt").value).split(" ");
+				//var splitten = toCamelize.split(" ");
+			document.getElementById("camel").innerHTML = valueFromField7[0].charAt(0).toUpperCase();
+			for(var i = 0; i<valueFromField7.length;i++){
+			valueFromField7[i] = valueFromField7[i].charAt(0).toUpperCase() + valueFromField7[i].substring(1,valueFromField7[i].length);
+			}
+			document.getElementById("camel").innerHTML = valueFromField7.join("");
+		}    
+	
+function permutation(){
+var valueFromField8 = document.getElementById('splittxt').value;
+var loop1; var loop2;
+	for(loop1 = 0; loop1 <= valueFromField8.length ; loop1++){
+		for(loop2 = 0; loop2< loop1; loop2++){
+		//alert(valueFromField8.substring(loop1, loop2));		
+		var p= valueFromField8.substring(loop1, loop2);
+		document.getElementById("split").innerHTML+=p+ " ";
+		}
+	}
+}   
+
+function primeNumbers(){
+var valueFromField9 = document.getElementById('prime').value;
+var num = valueFromField9;
+//alert(valueFromField9);
+var x; var y; var prime;
+	for (x=1; x<=num; x++) {
+			for(y=2; y<=x; y++) {
+				prime = x%y;
+				if(prime==0) {
+					break;
+				}
+				
+			}
+			if(x==y) {
+				//System.out.println(x+" ");
+				document.getElementById("primeList").innerHTML+=x+ " ";
+				}
+		}
+}  
+
+function numeric(){
+var valueFromField10 = document.getElementById('numericTxt').value;
+//alert(valueFromField10);
+var pattern = /(\D)/;
+
+var verifiednumeric;
+if(valueFromField10.match(pattern)){
+verifiednumeric = document.getElementById("numeric").innerHTML= valueFromField10 +" is not numeric.";
+}
+else{
+verifiednumeric = document.getElementById("numeric").innerHTML=valueFromField10+" is a numeric.";
+}
+}
+
+function verifyLeapYr(){
+var valueFromField5 = document.getElementById('leapyrtxt').value;
+var date = new Date();
+var yr = date.getFullYear();
+
+if(valueFromField5 % 4 == 0){
+document.getElementById("leapyr").innerHTML="Verified that year you entered has a leap year";
+}
+else{
+document.getElementById("leapyr").innerHTML="Verified that year you entered has NO leap year";
+}
+}
+   
+	
+        </script>
+
+
+<br>
+<p align=center>
+ <a href="#top">Go to top</a> 
+</p>
+</p></div>
+</p>
+</font>
+</body>
+</html>

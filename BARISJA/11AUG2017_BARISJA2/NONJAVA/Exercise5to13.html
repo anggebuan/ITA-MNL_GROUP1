@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simple Factorial</title>
+</head>
+<body>
+	<form>
+		<label for="factorial"><b>Show Date:</b> </label><br />
+		<button type="button" value="Submit" onclick="showDate()">Submit</button>
+	</form>
+	<br>
+
+	<form>
+		<label for="factorial"><b>Triangle Area Calculator:</b> </label><br>
+		<label for="sideA">Side A: </label><br /> <input
+			name="sideA" type="text" id="sideAInput" /> <br />
+		<label for="sideB">Side B: </label><br /> <input
+			name="sideB" type="text" id=sideBInput /> <br />
+		<label for="sideC">Side C: </label><br /> <input
+			name="sideC" type="text" id="sideCInput" /> <br />
+			 <br />
+		<button type="button" value="Submit" onclick="computeArea()">Submit</button>
+	</form>
+	<br>
+	<form>
+		<label for="factorial"><b>Camelizer:</b> </label><br /> <label
+			for="factorial">Insert String: </label><br /> <input name="name"
+			type="text" id="camelInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="camelize()">Submit</button>
+	</form>
+	<br>
+
+	<form>
+		<label for="factorial"><b>Leap year or not:</b> </label><br /> <label
+			for="factorial">Insert Year: </label><br /> <input name="name"
+			type="text" id="yearInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="leapYear()">Submit</button>
+	</form>
+	<br>
+	<form>
+		<label for="factorial"><b>String reverser:</b> </label><br /> <label
+			for="factorial">Insert String: </label><br /> <input name="name"
+			type="text" id="revInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="reverse()">Submit</button>
+	</form>
+	<br>
+
+	<form>
+		<label for="factorial"><b>Factorial:</b> </label><br /> <label
+			for="factorial">Insert Number: </label><br /> <input name="name"
+			type="text" id="input" /> <br /> <br />
+		<button type="button" value="Submit" onclick="calcFactorial()">Submit</button>
+	</form>
+	<br>
+
+
+	<form>
+		<label for="factorial"><b>Combination Generator:</b> </label><br /> <label
+			for="factorial">Insert String: </label><br /> <input name="name"
+			type="text" id="genInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="generateCombi()">Submit</button>
+	</form>
+	<br>
+		<form>
+		<label for="factorial"><b>Numeric Reader:</b> </label><br /> <label
+			for="factorial">Insert String: </label><br /> <input name="name"
+			type="text" id="numInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="readStr()">Submit</button>
+	</form>
+	<br>
+	<form>
+		<label for="factorial"><b>Prime Generator:</b> </label><br /> <label
+			for="factorial">Insert String: </label><br /> <input name="name"
+			type="text" id="primeInput" /> <br /> <br />
+		<button type="button" value="Submit" onclick="getPrimes()">Submit</button>
+	</form>
+
+	<script type="text/javascript">
+		function calcFactorial() { //number 10
+			var x = document.getElementById("input").value;
+
+			for (var i = x - 1; i > 1; --i) {
+				x = x * i;
+			} // parsing an array
+			alert(x);
+
+		}
+
+		function leapYear() { // number 8
+			var x = document.getElementById("yearInput").value;
+
+			if (x % 4 === 0) {
+				alert("Input year is a Leap Year");
+			} else {
+				alert("Input year is not a Leap Year");
+			}
+
+		}
+
+		function reverse() { // number 9
+			var x = document.getElementById("revInput").value;
+
+			var y = "";
+			for (var i = x.length - 1; i >= 0; i--) {
+				y = y + x.charAt(i);
+			}
+			alert(y);
+		}
+
+		function showDate() { // number 5
+			
+			var text = "Today is: ";
+			var date = new Date();
+
+			switch (date.getDay()) { // input is current day
+			case 6: // if (day == 6)
+				text += "Saturday";
+				break;
+			case 0: // if (day == 0)
+				text += "Sunday";
+				break;
+			case 5: // if (day == 0)
+				text += "Friday";
+				break;
+			case 4: // if (day == 0)
+				text += "Thursday";
+				break;
+			case 3: // if (day == 0)
+				text += "Wednesday";
+				break;
+			case 2: // if (day == 0)
+				text += "Tuesday";
+				break;
+			case 1: // if (day == 0)
+				text += "Monday";
+				break;
+
+			}
+			var hr = date.getHours();
+			var min = date.getMinutes();
+			var sec = date.getSeconds();
+
+			if (hr > 12) {
+				hr = hr - 12;
+				text += "\nCurrent time is: " + hr + ":" + min + ":" + sec
+						+ " PM";
+			} else {
+				hr = date.getHours();
+				text += "\nCurrent time is: " + hr + ":" + min + ":" + sec
+						+ " AM";
+			}
+			alert(text);
+
+		}
+	
+		function computeArea() {//number 6
+			var a = parseInt(document.getElementById("sideAInput").value);
+			var b = parseInt(document.getElementById("sideBInput").value);
+			var c = parseInt(document.getElementById("sideCInput").value);
+			var s = (a + b + c)/2;
+			var area = Math.sqrt(s * (s-a) * (s - b) * (s - c));
+			
+			alert("Area is: " + area);
+			
+			
+		}
+		
+		function camelize(){ //number 7
+			var camel =document.getElementById("camelInput").value
+			
+			var spl = camel.split(" ");
+			var text = "";
+
+		 for(var i = 0; i < spl.length; i++){
+			 spl[i] = spl[i].charAt(0).toUpperCase() + spl[i].substring(1,spl[i].length - 1);
+			 text += spl[i];
+			} 
+			alert(text);
+			
+		}
+		
+		function readStr(){ // number 12
+			var input = document.getElementById("numInput").value;
+			var x = isFinite(input);
+			var y = !isNaN(parseFloat(input));
+			if(isFinite(input) && !isNaN(parseFloat(input))){
+				alert("Input is numeric");
+			}else{
+				alert("Input is not numeric");
+			}
+			
+		}
+		
+		function generateCombi(){//number 11
+			var input = document.getElementById("genInput").value;
+			var text = "";
+			
+			for (var i = 0; i < input.length ; i++){
+				for(var j = i+1; j<= input.length; j++){
+					text += input.substring(i,j) +", "
+				}
+			}
+			
+			alert(text);
+			
+		}
+		
+		function getPrimes() {
+			var num = document.getElementById("primeInput").value;
+		    
+			var text = "";
+			for (var i = 2; i<=num; i++)
+			{
+				var ctr = 0;
+				for(var j = i; j >=1; j--){
+					if(i%j === 0){
+						ctr = ctr + 1;
+					}
+				}
+				if(ctr === 2)
+				{
+					text = text + i + " ";
+				}
+			}
+		    alert (text);
+		}
+	</script>
+</body>
+</html>

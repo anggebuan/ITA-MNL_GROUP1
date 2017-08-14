@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Homework</title>
+</head>"com.ooc.tengkh/com/oocl/tengkh/hw1/Homework1_JavaScript_RectangularShape.html"
+<body onload = "draw();">
+<h1>Homework1: Rectangular Shape</h1>
+<p>1. Write a JavaScript program to draw the following rectangular shape.</p>
+<canvas id = "myCanvas" width="150" height="150"></canvas>
+<script>
+	function draw(){
+		var draw = document.getElementById("myCanvas");
+		
+			var rectangle = draw.getContext('2d');
+			
+			rectangle.fillStyle = "#0000ff";
+			rectangle.fillRect(20,20,150,100);
+			rectangle.clearRect(40,40,90,60);
+			rectangle.lineWidth=5;
+			rectangle.strokeRect(45,45,80,50);
+		
+	}
+
+</script>
+</body>
+</html>

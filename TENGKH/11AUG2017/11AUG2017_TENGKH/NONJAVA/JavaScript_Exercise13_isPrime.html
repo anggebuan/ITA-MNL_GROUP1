@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta Content-Type: text/html; charset=utf-8></meta>
+<title>JavaScript Exercise</title>
+</head>
+<body>
+<h1>Exercise13: Prime Numbers</h1>
+<p>13. Write a JavaScript function to get all prime numbers from 0 to a specified number.</p>
+<script>
+	var prime = window.prompt("Input prime number:");
+	Prime1(prime);
+	
+	function Prime1(prime){
+		
+		var x = 3, j, i = 3, Arr = [2], isPrime;
+		
+		for (; x <= parseInt(prime); x += 2){
+			j = parseInt(Math.sqrt(x));
+			isPrime = true;
+			for (i = 2; i <= j; i++){
+				if( x % i == 0){
+					isPrime = false;
+					break;
+				}
+			}
+			if(isPrime){
+				Arr.push(x);
+			}
+		}
+		document.writeln("The prime numbers are: " + Arr);
+	}
+</script>
+</body>
+</html>
