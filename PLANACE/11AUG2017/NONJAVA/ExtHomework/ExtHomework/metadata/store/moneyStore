@@ -1,0 +1,14 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "moneyStore",
+        "model": "moneyModel",
+        "storeId": "moneyStore"
+    },
+    "designerId": "efc3bd99-4438-40d6-924d-5dbcbb020548"
+}

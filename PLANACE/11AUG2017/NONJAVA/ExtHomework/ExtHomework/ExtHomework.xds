@@ -1,0 +1,51 @@
+{
+    "name": "ExtHomework",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": "C:/Users/Nonie/Desktop/buildHW",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "displayfield-ExtBox1-2220-inputEl": "Not Installed"
+    },
+    "xdsVersion": "3.0.4",
+    "xdsBuild": 1386,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "dee939a5-2870-4be8-9ee5-528336315b30"
+        ],
+        "store": [
+            "efc3bd99-4438-40d6-924d-5dbcbb020548"
+        ],
+        "controller": [
+            "d69274a8-e339-4d4b-a55a-00865b17c2ba"
+        ],
+        "model": [
+            "cffbb9e7-d0e5-45b2-bdc3-278d4d9abd1e"
+        ],
+        "resource": [
+            "b773a169-f76e-4190-98ae-1f80ea6f9d3f",
+            "c1fcc988-445e-4cc0-af41-d89242cf9785"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
