@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Homework</title>
+</head>
+<body onload="draw();">
+	<h1>Homework3: Smiley</h1>
+	<p>3. Write a JavaScript program to draw the following diagram.</p>
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+	<script>
+		function draw() {
+			var canvas = document.getElementById('myCanvas');
+			if (canvas.getContext) {
+				var smile = canvas.getContext('2d');
+				smile.beginPath();
+				smile.arc(200, 200, 100, 0, Math.PI * 2, true); // one full circle
+				smile.moveTo(275, 200);
+				smile.arc(200, 200, 75, 0, Math.PI, false); 
+				smile.moveTo(150, 150);
+				smile.arc(170, 150, 20, 0, Math.PI * 2, true); //left eye
+				smile.arc(230, 150, 20, 0, Math.PI * 2, true); //right eye
+				smile.stroke(); 
+			}
+		}
+	</script>
+</body>
+</html>
