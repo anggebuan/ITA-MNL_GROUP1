@@ -1,0 +1,250 @@
+<html>
+<head>
+<h1>
+Exercise
+</h1>
+</head>
+<body>
+<p>Exercise 5: Date now</p>
+<input type="text" placeholder="now date" id= "dNow" size="75">
+<br>
+<input type="submit" value="Show Date" onclick="callDisplayDayofWk()">
+
+<br>
+<p>Exercise 6: Triangle area</p>
+<input type="text" placeholder="Area" readonly = "true" id="AreaTri">
+<br>
+<br>
+<input type="submit" value="get Sides of triangle" onclick="callGetAreaOfTriangle()">
+
+<br>
+<p>Exercise 7: Camel Casing</p>
+<input type="text" placeholder="came casing" readonly = "true" id="camelCase">
+<br>
+<input type="submit" value="Input String" onclick="callcapitalizeFirstLetter()">
+
+<br>
+<p>Exercise 8: Input Year</p>
+<input type="text" placeholder="Leap year?" readonly = "true" id="leapYr">
+<br>
+<input type="submit" value="Click to input year" onclick="callGregorian()">
+
+<br>
+<p>Exercise 9: Input reverse</p>
+<input type="text" placeholder="reverse" readonly = "true" id="reverse" >
+<br>
+<input type="submit" value="Click to input String" onclick="callReverse()">
+
+
+<br>
+<p>Exercise 10: Input factorial</p>
+<input type="text" placeholder="factorial" readonly = "true" id="factorial" >
+<br>
+<input type="submit" value="Click to input digit" onclick ="callFactorial()">
+
+<br>
+<p>Exercise 11: Character possibilities</p>
+<input type="text" placeholder="characters?" readonly = "true" id="charPos" >
+<br>
+<input type="submit" value="Click to input String" onclick="callStringPossibility()">
+
+<br>
+<p>Exercise 12: Is number?</p>
+<input type="text" placeholder="numeric or not?" readonly = "true" id="numeric" >
+<br>
+<input type="submit" value="Click to input digit?" onclick="callIsNumeric()">
+
+<br>
+<p>Exercise 13: prime number</p>
+<input type="text" placeholder="primes" readonly = "true" id="primeNumber" >
+<br>
+<input type="submit" value="input number" onclick="callGetPrimes()">
+
+
+<script>
+//5main
+function callDisplayDayofWk(){
+var ans =  getTimeNow() + " " + displayDayofWk();
+document.getElementById("dNow").value = ans;
+}
+//5a
+function displayDayofWk(){
+	return "Today is : " + getDayOfWk() + "\n";
+}
+//5b
+function getDayOfWk(){
+var date = new Date();
+var d = date.getDay();
+	if (d == 1){
+	return "Monday";
+	}else if (d == 2){
+	return "Tuesday";
+	}else if (d == 3){
+	return "Wednesday"
+	}else if (d == 4){
+	return "Thursday";
+	}else if (d == 5){
+	return "Friday";
+	}else if (d == 6){
+	return "Saturday";
+	}else{
+	return "Sunday";
+	}
+}
+//5c
+function getTimeNow(){
+var today = new Date();
+var hr = today.getHours();
+var ampm = (hr >= 12) ? "PM" : "AM";
+var min = today.getMinutes();
+var sec = today.getSeconds();
+var modifiedHR = (hr >= 12) ? hr -12 : hr ;
+ return " " + modifiedHR + ampm + ": " + min +": " +sec;
+}
+
+
+//6a
+function callGetAreaOfTriangle(){
+var a = prompt("Input 1st side: ");
+var b = prompt("Input 2nd side: ");
+var c = prompt("Input 3rd side: ");
+getAreaOfTriangle(a,b,c);
+
+}
+//6b
+function getAreaOfTriangle(sideA, sideB, sideC){
+var  ans = (parseInt(sideA) + parseInt(sideB) + parseInt(sideC))/2;
+alert(ans);
+document.getElementById('AreaTri').value = ans;	
+}
+
+//7a
+function callcapitalizeFirstLetter(){
+var str = prompt("input String: ");
+var ans =splitAllString(str);
+document.getElementById('camelCase').value = ans;	
+//alert(capitalizeFirstLetter(str));
+} 
+//7b
+function splitAllString(arrToken){
+	var tokens = arrToken.split(' ');
+	var ctr;
+	var camelized="";
+	for(ctr = 0; ctr <tokens.length; ctr++){
+	camelized =camelized + capitalizeFirstLetter(tokens[ctr]);
+	}	
+	return camelized;
+	
+}
+//7c
+function capitalizeFirstLetter(wholeString){
+return wholeString.replace(/^[a-z]/, function(str){
+return str.toUpperCase()});
+}
+
+
+function callGregorian(){
+var cal = prompt("input Year");
+var ans = gregorian(cal);
+document.getElementById("leapYr").value = ans;
+}
+
+function gregorian(yr){
+var year = yr
+var state;
+if (year % 4 == 0){
+	if((year % 100 == 0) && !(year % 400 == 0)){
+	state = false;
+	}else{
+	state = true;
+	}
+}else{
+state = false;
+}
+return state;
+}
+
+
+//9b
+function reverse(s) {
+  return s.split('').reverse().join('');
+}
+//9a
+function callReverse(){
+var str = prompt("input string: ");
+var ans = reverse(str);
+document.getElementById('reverse').value = ans;	
+}
+
+//10a
+function callFactorial(){
+var fac =prompt("enter factorial of n");
+var ans = factorial(fac);
+document.getElementById('factorial').value = ans;	
+}
+//10
+function factorial(fac) {
+		var res = 1;
+		for(var x=1; x<=fac; x++){
+		res = parseInt(res) * parseInt(x);
+		}
+return res;
+}
+
+//11a
+function callStringPossibility(){
+var str=prompt("Input string: ");
+var ans = stringPossibility(str)
+document.getElementById('charPos').value = ans;	
+}
+//11b
+function stringPossibility(str){
+	var str= str;
+	var firstloop;
+	var secondloop;
+	var result="";
+	for(firstloop = 0; firstloop <= str.length ; firstloop++){
+		for(secondloop = 0; secondloop<firstloop; secondloop++){
+		//alert(str.substring(firstloop, secondloop));
+		result+=str.substring(firstloop, secondloop) + ",";
+		}
+	}
+	return result
+}
+
+//12a
+function callIsNumeric(){
+var digit = prompt("is number? ");
+var ans = isNumeric(digit);
+document.getElementById('numeric').value = ans;	
+}
+//12b
+function isNumeric(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+//13a
+function callGetPrimes(){
+var insert = prompt("input number n of prime number: ");
+var ans = getPrimes(insert);
+document.getElementById('primeNumber').value = ans;	
+}
+//13b
+function getPrimes(max) {
+    var sieve = [], i, j, primes = [];
+    for (i = 2; i <= max; ++i) {
+        if (!sieve[i]) {
+            // i has not been marked -- it is prime
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) {
+                sieve[j] = true;
+            }
+        }
+    }
+    return primes;
+}
+
+
+</script>
+</body>
+</html>
