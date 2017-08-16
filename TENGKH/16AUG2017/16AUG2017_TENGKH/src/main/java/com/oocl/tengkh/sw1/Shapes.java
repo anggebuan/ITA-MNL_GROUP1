@@ -6,6 +6,7 @@ public class Shapes {
 	public Shapes(){}
 
 	public void draw() {
+		
 		System.out.println("I am a " + name);
 
 	}
