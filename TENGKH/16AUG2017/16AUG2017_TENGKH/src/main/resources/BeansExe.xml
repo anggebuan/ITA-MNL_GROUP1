@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="drawcircle" class="com.oocl.tengkh.sw1.Drawing">
+		<property name="shapes">
+			<bean id="circleobject" class="com.oocl.tengkh.sw1.Circle" />
+		</property>
+	</bean>
+	
+	<bean id="drawtriangle" class="com.oocl.tengkh.sw1.Drawing">
+		<property name="shapes">
+			<bean id="triangleobject" class="com.oocl.tengkh.sw1.Triangle" />
+		</property>
+	</bean>
+
+</beans> 
