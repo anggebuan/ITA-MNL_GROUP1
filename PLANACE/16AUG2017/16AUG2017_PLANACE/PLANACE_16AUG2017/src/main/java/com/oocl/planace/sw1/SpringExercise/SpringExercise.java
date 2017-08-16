@@ -12,11 +12,11 @@ public class SpringExercise {
 //			draw.setShape(circle);
 //			draw.getShape();
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("/com/oocl/planace/sw1/SpringExercise/Beans.xml");
 		Drawing obj = (Drawing) context.getBean("drawObjCircle");
 		obj.getShape();
 		
-		context = new ClassPathXmlApplicationContext("Beans.xml");
+		context = new ClassPathXmlApplicationContext("/com/oocl/planace/sw1/SpringExercise/Beans.xml");
 		obj = (Drawing) context.getBean("drawObjTriangle");
 		obj.getShape();
 	}
