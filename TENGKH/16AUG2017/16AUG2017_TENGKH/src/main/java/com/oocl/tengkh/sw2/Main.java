@@ -10,9 +10,6 @@ public class Main {
 		Employees role = (Employees) context.getBean("role");
 		Employees id = (Employees) context.getBean("employeeId");
 		
-		id.setEmployeeId("0927");
-		name.setName("Khimberlyjhyms Teng");
-		role.setRole("Programmer");
 		
 		id.getEmployeeId();
 		name.getName();
