@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="inheritedEmployeeAttr" class="com.oocl.allarra.HW6.Employee">
+		<property name="company" value="oocl"></property>
+	</bean>
+	  <bean name="employee1" class="com.oocl.allarra.HW6.Employee" parent= "inheritedEmployeeAttr">
+   		<property name="name" value = "Ramon"></property>
+   		<property name="id" value = "123456"></property>
+   		<property name="role" value = "Programmer"></property>
+   </bean>
+</beans>
