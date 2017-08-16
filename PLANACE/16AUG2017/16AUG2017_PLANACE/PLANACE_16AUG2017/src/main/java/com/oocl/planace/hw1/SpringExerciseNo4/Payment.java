@@ -3,7 +3,7 @@ package com.oocl.planace.hw1.SpringExerciseNo4;
 public class Payment {
 	Order order;
 
-	public void setOrder(Order order) {
+	public Payment (Order order) {
 		this.order = order;
 	}
 
