@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean id="company" class="com.oocl.barisja2.hw3.Company">
+		<property name="companyName" value="OOCL (Philippines) Inc." />
+		<property name="companyAddress" value="11F 2-Ecom Pasay Metro Manila" />
+		<property name="companyNo" value="3241561" />
+	</bean>
+
+	<bean id="employee" parent="company">
+		<property name="employeeName" value="Janiel Matthew" />
+	</bean>
+
+
+</beans>
