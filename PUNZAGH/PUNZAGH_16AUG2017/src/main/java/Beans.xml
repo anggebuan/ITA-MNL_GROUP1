@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+<bean id = "helloSpring" class = "com.oocl.punzagh.sw1.HelloSpringTest" scope = "singleton">
+	<property name = "message" value = "Hello World!"/>
+</bean>   
+
+<bean id = "helloSpring2" class = "com.oocl.punzagh.sw2.HelloSpringTest" scope = "singleton" init-method = "init" 
+      destroy-method = "destroy">
+	<property name = "message" value = "Hello World!"/>
+</bean>
+<!-- Using Ref (not working since structure has been changed
+<bean id = "circle" class = "com.oocl.punzagh.sw4.Circle" >
+	<property name = "shape" ref="shape">
+	</property>
+</bean>
+
+<bean id = "triangle" class = "com.oocl.punzagh.sw4.Triangle" >
+	<property name = "shape" ref="shape">
+	</property>
+</bean>
+
+<bean id ="shape" class = "com.oocl.punzagh.sw4.Shape"></bean>
+ -->
+<bean id ="drawcircle" class = "com.oocl.punzagh.sw3.Drawing">
+<property name = "shape">
+<bean id ="circleobject" class = "com.oocl.punzagh.sw3.Circle"/>
+</property>
+</bean>
+
+<bean id ="drawtriangle" class = "com.oocl.punzagh.sw3.Drawing">
+<property name = "shape">
+<bean id ="triangleobject" class = "com.oocl.punzagh.sw3.Triangle"/>
+</property>
+</bean>
+</beans>

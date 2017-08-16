@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="helloSpring" class="com.oocl.tengkh.samples.HelloSpringTest">
+		<property name="message" value="Hello World"></property>
+	</bean>
+
+	<bean id="helloSpring2" class="com.oocl.tengkh.samples.HelloSpringTest2" scope = "singleton">
+		<property name="message" value="Hello World"></property>
+	</bean>
+
+	<bean id="helloSpring3" class="com.oocl.tengkh.samples.HelloSpringInitDestroy" scope = "singleton" init-method= "init" destroy-method="destroy"> 
+	<property name="message" value="Hello World"></property>
+	</bean>
+</beans> 
