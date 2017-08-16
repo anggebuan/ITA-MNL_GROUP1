@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<!-- Start of HW3 -->
+	<bean id="parent" class="com.oocl.punzagh.hw3.Parent"
+		scope="singleton" init-method="init">
+		<property name="company" value="OOCL">
+		</property>
+	</bean>
+	<bean id="employee" class="com.oocl.punzagh.hw3.Employee"
+		scope="singleton" parent="parent">
+		<property name="name" value="Ghino"></property>
+		<property name="company" value="Cosco"></property>
+	</bean>
+	<!-- End of HW3 -->
+</beans>

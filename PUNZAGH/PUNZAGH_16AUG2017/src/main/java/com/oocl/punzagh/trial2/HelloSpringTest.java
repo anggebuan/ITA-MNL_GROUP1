@@ -1,4 +1,4 @@
-package com.oocl.punzagh.sw2;
+package com.oocl.punzagh.trial2;
 
 public class HelloSpringTest {
 	private String message;
