@@ -7,7 +7,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("BeansEx4.xml");
-		A obj = (A) context.getBean("price");
+		A obj = (A) context.getBean("A");
+		obj.showAll();
 	
 	}
 }
