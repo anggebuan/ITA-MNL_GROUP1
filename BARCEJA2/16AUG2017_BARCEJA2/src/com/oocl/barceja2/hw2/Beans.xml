@@ -10,4 +10,8 @@
 	<constructor-arg index="1" value="2001" />
 	<constructor-arg index="2" value="Suhay" />
 	</bean>
+ 
+ 	<bean id = "classA" class = "com.oocl.barceja2.hw2.classA" >
+	<constructor-arg ref = "order"/>
+	</bean>
  </beans>
