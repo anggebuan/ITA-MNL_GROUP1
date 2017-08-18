@@ -1,0 +1,66 @@
+<html>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+ 	  <script type="text/javascript">
+ 	  	Ext.application({
+          launch: function() {
+              var images = Ext.get('images').select('img');
+              Ext.each(images.elements, function(el) {
+                  var dd = Ext.create('Ext.dd.DD', el, 'imagesDDGroup', {
+                      isTarget: false
+                  });
+              });
+          }
+       }); 
+      var mainTarget = Ext.create('Ext.dd.DDTarget', 'mainRoom', 'imagesDDGroup', {
+         ignoreSelf: false
+      });
+ 	  </script>
+    <style>
+      #content{
+         width:600px;
+         height:400px;
+         padding:10px;
+         border:1px solid #000;
+      }
+      #images{
+         float:left;
+         width:40%;
+         height:100%;
+         border:1px solid Black;
+         background-color:rgba(222, 222, 222, 1.0);
+      }
+      #mainRoom{
+         float:left;
+         width:55%;
+         height:100%;
+         margin-left:15px;
+         border:1px solid Black;
+         background-color:rgba(0, 222, 222, 1.0);
+      }
+      .image{   
+         width:64px;
+         height:64px;
+         margin:10px;
+         cursor:pointer;
+         border:1px solid Black;
+         display: inline-block;
+         background-color:rgba(0, 555, 555, 1.0);
+      }
+   </style>
+<body>
+   <div id="content">   
+      <div id="images"> 
+         <div id= "b1" class = "image"></div>
+         <div id= "b2" class = "image"></div>
+         <div id= "b3" class = "image"></div>
+         <div id= "b4" class = "image"></div>
+         <div id= "b5" class = "image"></div>
+         <div id= "b6" class = "image"></div>
+         <div id= "b7" class = "image"></div>
+         <div id= "b8"class = "image"></div>
+      </div>
+      <div id="mainRoom"></div>
+   </div>
+</body>
+</html>
