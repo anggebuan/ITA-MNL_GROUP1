@@ -21,10 +21,6 @@ public class WriteFile {
 			String filename = scan.nextLine();
 			FileOutputStream fop = new FileOutputStream(FILEPATH+filename+FILETYPE);
 
-					byte[] contentInBytes = (FILEPATH+filename+FILETYPE).getBytes();
-					fop.write(contentInBytes);
-					fop.flush();
-					fop.close();
 					Files.write(Paths.get("src/main/java/com/oocl/punzagh/hw7/words.txt"), (FILEPATH+filename+FILETYPE+"\r\n").getBytes(), StandardOpenOption.APPEND);
 		} catch (IOException e) {
 

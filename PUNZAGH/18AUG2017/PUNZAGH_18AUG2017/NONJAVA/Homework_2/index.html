@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework 2 ExtJS</title>
+<script type="text/javascript"></script>
+<script>
+ var telein = parseInt(0);
+ var attacks = parseInt(0);
+var teleout = parseInt(0);
+var timeout;
+var hasTeleported = false;
+var hasAttacked = false;
+var zeroslash = ["./ZeroSlash/0.png","./ZeroSlash/1.png","./ZeroSlash/2.png","./ZeroSlash/3.png","./ZeroSlash/4.png","./ZeroSlash/5.png","./ZeroSlash/6.png","./ZeroSlash/7.png","./ZeroSlash/8.png","./ZeroSlash/9.png","./ZeroSlash/10.png","./ZeroSlash/11.png","./ZeroSlash/12.png","./ZeroSlash/13.png","./ZeroSlash/14.png","./ZeroSlash/15.png","./ZeroSlash/16.png","./ZeroSlash/17.png","./ZeroSlash/18.png","./ZeroSlash/19.png","./ZeroSlash/20.png","./ZeroSlash/21.png","./ZeroSlash/22.png","./ZeroSlash/23.png","./ZeroSlash/24.png","./ZeroSlash/25.png","./ZeroSlash/26.png","./ZeroSlash/27.png","./ZeroSlash/28.png","./ZeroSlash/29.png","./ZeroSlash/30.png","./ZeroSlash/31.png","./ZeroSlash/32.png","./ZeroSlash/33.png","./ZeroSlash/34.png","./ZeroSlash/35.png","./ZeroSlash/36.png","./ZeroSlash/37.png","./ZeroSlash/38.png","./ZeroSlash/39.png","./ZeroSlash/40.png"];
+var teleportin =["./Teleport/0.png","./Teleport/1.png","./Teleport/2.png","./Teleport/3.png","./Teleport/4.png","./Teleport/5.png","./Teleport/6.png","./Teleport/7.png","./Teleport/8.png","./Teleport/9.png","./Teleport/10.png","./Teleport/11.png","./Teleport/12.png","./Teleport/13.png","./Teleport/14.png","./Teleport/15.png","./Teleport/16.png","./Teleport/17.png","./Teleport/18.png"];
+var teleportout= ["./Teleport/18.png","./Teleport/17.png","./Teleport/16.png","./Teleport/15.png","./Teleport/14.png","./Teleport/13.png","./Teleport/12.png","./Teleport/11.png","./Teleport/10.png","./Teleport/9.png","./Teleport/8.png","./Teleport/7.png","./Teleport/6.png","./Teleport/5.png","./Teleport/4.png","./Teleport/3.png","./Teleport/2.png","./Teleport/1.png","./Teleport/0.png"];
+function checkNext(){
+if(telein<teleportin.length-1){
+telein++;
+clearTimeout(timeout);
+Telein();
+}else if(telein===teleportin.length-1&&hasTeleported==false){
+hasTeleported = true;
+clearTimeout(timeout);
+zeroslasher();
+}
+if(hasTeleported==true&&hasAttacked==false&&attacks<zeroslash.length-1){
+attacks++;
+zeroslasher();
+}else if(attacks===zeroslash.length-1&&hasAttacked==false){
+hasAttacked = true;
+clearTimeout(timeout);
+Teleout();
+}
+if(hasTeleported==true&&hasAttacked==true&&teleout<teleportout.length-1){
+teleout++;
+Teleout();
+}else if(teleout===teleportout.length-1){
+hasAttacked = false;
+hasTeleported = false;
+telein = 0;
+teleout = 0;
+attacks = 0;
+clearTimeout(timeout);
+Telein();
+}
+}
+function Telein(){
+imgs.src = teleportin[telein];
+timeout=setTimeout('checkNext()',100);
+}
+function Teleout(){
+imgs.src = teleportout[teleout];
+timeout=setTimeout('checkNext()',100);
+}
+function zeroslasher(){
+imgs.src = zeroslash[attacks];
+timeout=setTimeout('checkNext()',100);
+}
+</script>
+</head>
+<body>
+ <img id='images'/>
+ <script>
+ var imgs = document.getElementById('images');
+
+ Telein();
+ </script>
+</body>
+</html>
