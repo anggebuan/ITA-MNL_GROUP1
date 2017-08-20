@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="Homework_1.js">
+</script>
+<title>Create a table</title> 
+</head>
+<body> 
+<table id="theTable" border="1"> 
+</table>
+<form> 
+Create Table<br>
+Rows: <input type="number" value="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="rows" name ="rows"><br>
+Column: <input type="number" value="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="columns" name ="columns"><br>
+<input type="button" onclick="createTable()" value="Create table"> 
+</form>
+</body>
+</html>
