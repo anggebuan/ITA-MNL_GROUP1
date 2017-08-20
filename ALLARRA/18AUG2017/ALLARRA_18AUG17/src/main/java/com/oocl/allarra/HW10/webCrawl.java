@@ -1,6 +1,8 @@
 package com.oocl.allarra.HW10;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -11,9 +13,13 @@ public class webCrawl {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		javaIOstream jio;
-		
 
+		javaIOstream jIO = new javaIOstream("D:\\Mon allarey\\text\\crawled.txt","D:\\Mon allarey\\text\\crawled.txt");
+		ArrayList<String> ioContent = jIO.Read();
+		webCrawl wc = new webCrawl();
+		wc.connect("http://www.bing.com");
+		ioContent.add(wc.crawl());
+		jIO.write(ioContent);
 	}
 	Document doc;
 	public void connect(String site){
