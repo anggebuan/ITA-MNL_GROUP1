@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+	width: 800px;
+	height: 50px;
+	position: relative;
+	background: pink;
+}
+
+#animateObject {
+	width: 150;
+	height: 50px;
+	position: absolute;
+	background-color: blue;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+}
+</style>
+<body>
+
+	<p>
+		<button onclick="animateMe()">Animation Start</button>
+	</p>
+
+	<div id="container">
+		<div id="animateObject">Hello I am Moving</div>
+	</div>
+
+	<script>
+		function animateMe() {
+			var elem = document.getElementById("animateObject");
+			var pos = 0;
+			var id = setInterval(frame, 5);
+			function frame() {
+				if (pos > 675) {
+					clearInterval(id);
+				} else {
+					pos++;
+					elem.style.left = pos + 'px';
+				}
+			}
+		}
+	</script>
+
+</body>
+</html>
