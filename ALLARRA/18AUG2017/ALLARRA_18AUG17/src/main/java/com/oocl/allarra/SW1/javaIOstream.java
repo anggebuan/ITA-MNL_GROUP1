@@ -12,7 +12,7 @@ public class javaIOstream {
 	
 	String filename;
 	String fileTo;
-	javaIOstream(String filename, String fileTo){
+	public javaIOstream(String filename, String fileTo){
 		this.filename = filename;	
 		this.fileTo = fileTo;
 	}
