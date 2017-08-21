@@ -31,7 +31,15 @@
 	}
 
 	function MoveDown() {
-		obj.style.top = parseInt(obj.style.left) + 'px';
+		obj.style.top = parseInt(obj.style.left) + 20 + 'px';
+	}
+	
+	function MoveLeft() {
+		obj.style.left = parseInt(obj.style.left) - 20 + 'px';
+	}
+	
+	function MoveUp() {
+		obj.style.top = parseInt(obj.style.left) - 20 + 'px';
 	}
 
 	window.onload = initialize;
@@ -46,6 +54,8 @@
 
 	<input type="button" onclick="MoveRight();" value="Move Right">
 	<input type="button" onclick="MoveDown();" value="Move Down">
+	<input type="button" onclick="MoveLeft();" value="Move Left">
+	<input type="button" onclick="MoveUp();" value="Move Up">
 
 	<form style="border: solid; background: blue;">
 		<div id="container">

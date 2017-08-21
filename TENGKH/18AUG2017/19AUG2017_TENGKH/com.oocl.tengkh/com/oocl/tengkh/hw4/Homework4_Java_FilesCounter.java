@@ -14,7 +14,8 @@ public class Homework4_Java_FilesCounter {
 
 	public static void main(String[] args) {
 		int countFile = 0, countDir = 0;
-		File pathFiles = new File("C:/Users/KhimTeng09/Desktop");
+		//File pathFiles = new File("C:/Users/KhimTeng09/Desktop");
+		File pathFiles = new File ("C:/Users/tengkh/Desktop");
 		File[] PathFileList = pathFiles.listFiles();
 
 		List<String> ListArray = new ArrayList<String>();
