@@ -16,9 +16,8 @@ public class Homework9 {
 			if (in.equals("1"))
 				Runtime.getRuntime().exec("notepad");
 			else
-				Runtime.getRuntime().exec("cmd /c start \"%programfiles%\\Windows Media Player\\wmplayer.exe\"");
+				Runtime.getRuntime().exec("C:\\Program Files\\Windows Media Player\\wmplayer.exe");
 		} catch (Exception e) {
-
 		}
 	}
 
