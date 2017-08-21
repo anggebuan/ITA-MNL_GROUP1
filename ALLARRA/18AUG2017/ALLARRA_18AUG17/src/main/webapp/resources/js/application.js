@@ -24,11 +24,15 @@ function onCreateTableClickButton(){
 	}	
 }
 var myImg;
-
+var imgObj;
+var xflag = true;
 function init(){
 	var canvas = document.getElementById('myCanvas'),
 	context = canvas.getContext("2d");
 	make_base(context);
+	imgObj = document.getElementById('img1');
+	imgObj.style.position = 'relative';
+	imgObj.style.left = '3px';
 	document.getElementById("rightButton").addEventListener("click", toRightFunction, false); 
 	document.getElementById("leftButton").addEventListener("click", toLeftFunction, false);
 }
@@ -42,19 +46,44 @@ function toRightFunction(){
 		myImg = context.drawImage(base_image,z,0);
 		setTimeout(1000);
 	}
+	move();
 }
 	
+function move() {
+
+	if (xflag) {
+		imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+	} else {
+		imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+	}
+
+	if (parseInt(imgObj.style.left) === 353) {
+		xflag = false;
+	}
+	if (parseInt(imgObj.style.left) === 3) {
+		xflag = true;
+	}
+	
+	
+	
+	animate = setTimeout(move, 1); 
+
+
+}
 
 function toLeftFunction(){
 	var canvas = document.getElementById('myCanvas');
 	
 	context = canvas.getContext("2d");
-	for(z=300; z>0;z--){
+	for(z=50; z>0;z--){
 		context.clearRect(0, 0, canvas.width, canvas.height);
 		base_image = new Image(context);
 		base_image.src = "./resources/pics/img2.jpg";
 		myImg = context.drawImage(base_image,z,0);
+		
 	}
+	move();
+	
 	
 }
 
