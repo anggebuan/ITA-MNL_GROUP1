@@ -1,4 +1,4 @@
-package com.oocl.tengkh.source;
+package com.oocl.tengkh.resource;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -14,6 +14,8 @@ import javax.ws.rs.Produces;
 public class FilesDirResource {
 	@GET
 	@Produces("text/plain")
+	
+	
 	public String Counter() {
 		int countFile = 0, countDir = 0;
 		File pathFiles = new File("C:/Users/tengkh/Desktop");

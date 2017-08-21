@@ -1,4 +1,4 @@
-package com.oocl.tengkh.resource;
+package com.oocl.tengkh.source;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
