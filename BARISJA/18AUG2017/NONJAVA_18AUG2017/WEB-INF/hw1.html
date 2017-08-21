@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Item number 1</title>
+</head>
+<body>
+
+	<form>
+		<table>
+			<tr>
+				<td>
+					<label>Number of Columns:</label>
+				</td>
+				<td>
+					<input type="text" id="column">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Number of Rows:</label>
+				</td>
+				<td>
+					<input type="text" id="row">
+				</td>
+			</tr>	
+		
+		</table>
+		<button type="button" onclick="generateTable()">Generate Table</button>
+	</form>
+
+	<table id="table2" border="1"></table>
+	
+	
+	<script type="text/javascript">
+	
+
+		function generateTable() {
+			rn = document.getElementById('row').value;
+			cn = document.getElementById('column').value;
+
+			for (var r = 0; r < parseInt(rn, 10); r++) {
+				var x = document.getElementById('table2').insertRow(r);
+				for (var c = 0; c < parseInt(cn, 10); c++) {
+					var y = x.insertCell(c);
+					y.innerHTML = "Row-" + r + " Column-" + c;
+				}
+			}
+		}  
+	</script>
+
+
+</body>
+</html>

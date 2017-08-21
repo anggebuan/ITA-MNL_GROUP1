@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Stop the Exodia</title>
+</head>
+<body>
+<img id="img1" src="1.jpg" onmouseenter="stop()" onmouseleave="move()">
+
+<img id="img1" src="6.jpg" height = "360" width="249">
+<br>
+<br>
+<button onclick="move()" >Animate</button>
+<label id = "score">Score: 0</label>
+<br><br>
+<button onclick= "reset()">Reset</button>
+</body>
+
+<script type="text/javascript">
+	
+
+	var imgObj = null;
+	var animate;
+	var xflag = true;
+	var yflag = true;
+	var score = 0;
+	function init() {
+		imgObj = document.getElementById('img1');
+		imgObj.style.position = 'relative';
+		imgObj.style.left = '3px';
+	}
+
+
+	function move() {
+
+		if (xflag) {
+			imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+		} else {
+			imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+		}
+
+		if (parseInt(imgObj.style.left) === 353) {
+			xflag = false;
+		}
+		if (parseInt(imgObj.style.left) === 3) {
+			xflag = true;
+		}
+		
+		
+		
+		animate = setTimeout(move, 9); // call moveRight in 20msec
+
+
+	}
+
+	function stop() {
+		clearTimeout(animate);
+		
+		if(parseInt(imgObj.style.left) === 253){
+			score++;
+			document.getElementById('score').innerHTML = 'Score: ' + score;
+		}
+	}
+	
+	function reset() {
+		clearTimeout(animate);
+		
+		imgObj.style.left = '3px'; 
+		score = 0;
+		document.getElementById('score').innerHTML = 'Score: ' + score;
+		xflag = true;
+	}
+
+	window.onload = init;
+</script>
+
+</html>
