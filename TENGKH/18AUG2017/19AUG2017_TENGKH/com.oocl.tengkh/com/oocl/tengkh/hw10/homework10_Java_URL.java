@@ -24,7 +24,7 @@ public class homework10_Java_URL {
 
 			String inputLine;
 
-			String fileName = "C:\\Users\\KhimTeng09\\Desktop\\test.html";
+			String fileName = "C:\\Users\\tengkh\\Desktop\\test.doc";
 			File file = new File(fileName);
 
 			if (!file.exists()) {

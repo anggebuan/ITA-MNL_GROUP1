@@ -13,15 +13,16 @@ public class homework6_Java_Deadlock {
 		T1.start();
 		T2.start();
 
-		
-		 ThreadMXBean bean = ManagementFactory.getThreadMXBean(); long ids[] =
-		 bean.findMonitorDeadlockedThreads();
-		 
-		 if(ids != null) { System.out.println("\nFound deadlocks"); }else{
-		 System.out.println("No deadlock found"); }
-		 
-		 detectDeadlock();
-		 
+		ThreadMXBean bean = ManagementFactory.getThreadMXBean();
+		long ids[] = bean.findMonitorDeadlockedThreads();
+
+		if (ids != null) {
+			System.out.println("\nFound deadlocks");
+		} else {
+			System.out.println("No deadlock found");
+		}
+
+		detectDeadlock();
 
 	}
 
@@ -30,11 +31,11 @@ public class homework6_Java_Deadlock {
 			synchronized (Lock1) {
 				System.out.println("Thread 1: Holding lock 1...");
 
-				try {
-					Thread.sleep(0);
+			/*	try {
+					Thread.sleep(100000);
 				} catch (InterruptedException e) {
 					detectDeadlock();
-				}
+				}*/
 				System.out.println("Thread 1: Waiting for lock 2...");
 
 				synchronized (Lock2) {
@@ -49,11 +50,11 @@ public class homework6_Java_Deadlock {
 			synchronized (Lock2) {
 				System.out.println("Thread 2: Holding lock 1...");
 
-				try {
-					Thread.sleep(1000);
+			/*	try {
+					Thread.sleep(3000);
 				} catch (InterruptedException e) {
 					detectDeadlock();
-				}
+				}*/
 				System.out.println("Thread 2: Waiting for lock 2...");
 
 				synchronized (Lock1) {
