@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-neptune/resources/theme-neptune-all.css" rel="stylesheet" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+      <script type="text/javascript">
+         Ext.onReady(function(){
+		 var panel = Ext.create('Ext.Panel', {
+			   renderTo: Ext.getElementById('Panel1'),
+				html: "Alerting ... ",
+			   renderTo: Ext.getBody(),
+               text: 'Click Me',
+			   
+              listeners: {
+                  myEvent: function(panel) {
+                     Ext.MessageBox.alert('Greetings', 'Hello World ! ');
+                 }
+					}
+				
+            });
+            var button = Ext.create('Ext.Button', {
+               renderTo: Ext.getElementById('Panel2'),
+               text: 'Click Me Please',
+			   
+               listeners: {
+                  myEvent: function(button) {
+                     Ext.MessageBox.alert('Greetings', 'Hello World');
+                  }
+               }
+            });
+			  button.on('click', function() {
+				Ext.Msg.alert('Gotcha!','You clicked me ^__^ ');
+				 });
+				 
+            Ext.defer(function() {
+			panel.fireEvent('myEvent');
+			//button.fireEvent('myEvent');
+            }, 2000);
+         }); 
+      </script> 
+   </head>
+   <body>
+      <p><!--Alert will appear after 2 seconds when the page is loaded. --></p>
+      <div id = 'Panel1' /> 
+	  
+	<div id = 'Panel2' /> 	  <!--  panel will be rendered here-- >
+   </body>
+</html>
