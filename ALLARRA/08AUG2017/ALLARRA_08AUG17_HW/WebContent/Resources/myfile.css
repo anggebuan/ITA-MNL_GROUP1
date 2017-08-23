@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+.classheader{
+background-color: gray;
+color: white;
+margin:0px;
+border:0px;
+padding:0px;
+}
+.skip{
+	height:50px;
+}
+.inLineTransact{
+	display:inline;
+}
+ul{
+	color: black;
+	list-style-type: none;
+	padding: 5px;
+}
+li{
+	float: left;
+	padding:5px;
+	background-color: #808080;
+}
+li:hover{
+	background-color: #c0c0c0
+}
+MenuBarContainer{
+	background-color: #808080
+}
