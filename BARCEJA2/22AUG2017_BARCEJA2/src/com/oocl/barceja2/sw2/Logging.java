@@ -4,6 +4,11 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -36,21 +41,35 @@ public class Logging {
    
    
 	private void writeLogger() throws IOException {
-		
-		String existingPath = "D:\\logger\\bookslogger.txt";
-		BufferedWriter bw = null;
-		PrintWriter out = null;
-		try {
-			FileWriter fw = new FileWriter(existingPath, true);
-			bw = new BufferedWriter(fw);
-			out = new PrintWriter(bw);
-			out.println("Webservice has been accessed");
-		} catch (IOException e) {
-			// exception handling left as an exercise for the reader
-		} finally {
-			bw.close();
-			out.close();
-		}
+		// TODO Auto-generated method stub
+		InetAddress ip;
+	    BufferedWriter bw = null;
+ 		PrintWriter out = null;
+ 		StringBuilder sb = new StringBuilder();
+ 		
+	        try {
+	            ip = InetAddress.getLocalHost();
+	            DateFormat dateFormat = new SimpleDateFormat("dd/MMM/YYYY HH:mm:ss");
+	            Calendar cal = Calendar.getInstance();
+	            
+	            String existingPath = "D:\\logger\\bookslogger.txt";
+	    		FileWriter fw = new FileWriter(existingPath, true);
+    			bw = new BufferedWriter(fw);
+    			out = new PrintWriter(bw);
+    			sb.append(dateFormat.format(cal.getTime()) + " - ");
+    			sb.append("Hostname/ IP Address: " + ip);
+    			sb.append("; Web service has been accessed");
+    			System.out.println(sb.toString());
+    			out.println(sb.toString());
+	    		
+	            
+	        } catch (UnknownHostException e) {
+	 
+	            e.printStackTrace();
+	        } finally {
+    			bw.close();
+    			out.close();
+    		}
 	}
 
    /** 

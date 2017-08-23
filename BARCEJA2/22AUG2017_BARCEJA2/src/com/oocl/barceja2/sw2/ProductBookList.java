@@ -9,7 +9,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.oocl.barceja.sw1.Operations;
-import com.oocl.barceja2.pr2.ProductServiceImple;
 
 @WebService
 public class ProductBookList {
