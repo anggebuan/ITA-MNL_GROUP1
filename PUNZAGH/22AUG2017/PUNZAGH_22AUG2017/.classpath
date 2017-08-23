@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 8.5/lib/servlet-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/aopalliance-.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/aspectj-1.6.9.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/aspectj-weaver.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aop-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aop-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aop-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aspects-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aspects-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-aspects-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-beans-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-beans-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-beans-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-support-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-support-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-context-support-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-core-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-core-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-core-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-expression-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-expression-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-expression-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-tomcat-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-tomcat-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-instrument-tomcat-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jdbc-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jdbc-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jdbc-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jms-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jms-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-jms-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-messaging-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-messaging-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-messaging-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-orm-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-orm-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-orm-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-oxm-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-oxm-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-oxm-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-test-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-test-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-test-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-tx-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-tx-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-tx-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-web-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-web-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-web-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-portlet-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-portlet-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-webmvc-portlet-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-websocket-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-websocket-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="22AUG2017 Jars/spring-websocket-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
