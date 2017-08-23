@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Table</title>
+<script>
+	function CreatTable() {
+		var rownum, colnum, table;
+		rownum = parseInt(document.getElementById("rowNum").value);
+		colnum = parseInt(document.getElementById("colNum").value);
+		
+		for (var row = 0; row<rownum; row++){
+			rows = document.getElementById("tabular").insertRow(row);
+			for (var col = 0; col<colnum; col++){
+				var columns = rows.insertCell(col);
+				columns.innerHTML = "x-" + row + " y-" + col;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>User Input Table</h1>
+	<p>1) Write a JavaScript function that creates a table, accept row,
+		column numbers from the user, and input row-column number as content
+		(e.g. Row-0 Column-0) of a cell.</p>
+	<form style="border: solid; padding: 10px;">
+		<p>Input row number and column to create a table</p>
+		</br> Row Number: <input type="text" id="rowNum"></br>
+		</br> Column Number: <input type="text" id="colNum"></br>
+		</br> <input type="button" onclick="CreatTable();" value="Create Table">
+	</form>
+	</br>
+	</br>
+	<form>
+	<div>
+	<table id="tabular" border="1"></table>
+	</div>
+	</form>
+	
+
+</body>
+</html>
