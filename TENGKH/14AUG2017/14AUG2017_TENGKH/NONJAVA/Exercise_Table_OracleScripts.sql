@@ -1,4 +1,4 @@
---Homework Day 10: Oracle 
+-- Exercises
 -- Create table with data
 
 CREATE TABLE MNL_ITS_SCHED(
