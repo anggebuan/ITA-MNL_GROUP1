@@ -1,4 +1,4 @@
--- Exercises
+-- Exercise
 -- Create table with data
 
 CREATE TABLE MNL_ITS_SCHED(
