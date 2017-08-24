@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>KBANK</title>
+<link type="text/css" rel="stylesheet" href="./login.css">
+</head>
+<body>
+	<h1 class="header">
+		Khimberlyjhyms Bank</h1>
+	<form name="login" class="login">
+		Username: <input type="text" name="userid" /> <br><br>
+		Password: <input type="password" name="pswrd" /> <br><br>
+		<input type="button" onclick="check(this.form)" value="Login" /> 
+		<input type="reset"	value="Cancel" />
+	</form>
+	<script language="javascript">
+		function check(form)/*function to check userid & password*/
+		{
+			
+			if (form.userid.value == "khimboot" && form.pswrd.value == "valentine09") {
+				
+				location.href = "./kBank.html";
+			} else {
+				alert("Error Password or Username");
+			}
+		}
+	</script>
+</body>
+</html>

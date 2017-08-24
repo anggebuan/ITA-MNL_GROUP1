@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="08AUG2017_TENGKH2">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.oocl.tengkh"/>
+        <property name="java-output-path" value="/08AUG2017_TENGKH2/build/classes"/>
+        <property name="context-root" value="08AUG2017_TENGKH2"/>
+    </wb-module>
+</project-modules>
