@@ -1,0 +1,35 @@
+Beans2.xml<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="helloSpring" class="com.oocl.escobjo.hw.HelloSpringTest">
+		<property name="message" value="Hello World !"></property>
+	</bean>
+
+<bean id="helloSpring2" class="com.oocl.escobjo.hw.HelloSpringTest" scope="singleton">
+		<property name="message" value="Hello Life !"></property>
+	</bean>
+	
+<bean id="helloSpring3" class="HelloSpring_init_dest" init-method = "init" destroy-method = "destroy">
+		<property name="message" value="Hello Life !"></property>
+	</bean>
+	
+	
+	
+	<bean id="shape1" class="com.oocl.escobjo.hw.Drawing">
+		<property name="shape"><bean id="shape1" class="com.oocl.escobjo.hw.Drawing">
+		<property name="shape">
+			<bean id="Circle" class="com.oocl.escobjo.hw.Circle">
+			<bean id="Circle" class="com.oocl.escobjo.hw.Circle">
+			
+			</bean>
+		</property>
+	</bean>
+
+</beans>
+
+
+	

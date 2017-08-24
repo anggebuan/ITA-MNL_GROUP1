@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="emp" class="com.oocl.escobjo.hw.Employee2" parent="com">
+		<property name="name" value = "Name: Jossel"></property>
+		<property name="employee_id" value = "ID: 1120"> </property>
+		<property name="role" value = "Role: Artist"></property>
+		
+		
+	</bean>   
+	
+	<bean id="com" class="com.oocl.escobjo.hw.Employee2">
+	<property name="company" value = "Company: OOCL"></property>
+	</bean> 
+</beans>
