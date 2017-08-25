@@ -1,0 +1,42 @@
+/*
+1. Create and selecting
+NOTE: I have inserted using import data by right clicking the table and import data.
+I have used the insert.csv
+*/
+
+CREATE
+  TABLE MNL_EQM_EQP_MASTER
+  (
+    eqp_id            NUMBER(19,0) PRIMARY KEY,
+    eqp_num           VARCHAR2(10 CHAR) NOT NULL,
+    eqp_type          VARCHAR2(4 CHAR) NOT NULL,
+    eqp_size_type     VARCHAR2(4 CHAR) NOT NULL,
+    eqp_yr_built      NUMBER(19,0),
+    eqp_curr_auth_num VARCHAR2(18 CHAR) NOT NULL,
+    eqp_num_prefix    VARCHAR2(4 CHAR) NOT NULL,
+    create_iodt       VARCHAR2(18 CHAR) NOT NULL,
+    rec_upd_dt        TIMESTAMP(6) NOT NULL
+  );
+
+-- 2. Simple select with where
+select * from mnl_eqm_eqp_master where eqp_size_type = '20GP';
+
+
+--3. select with between
+select * from mnl_eqm_eqp_master where eqp_id between 100000006054810 and 100000006054850;
+
+--4. select with compound where
+select * from mnl_eqm_eqp_master where eqp_num = 'KFXU200401' and eqp_size_type = '20GP' and eqp_type = 'CTR';
+  
+--5. select with in predicate
+select * from mnl_eqm_eqp_master where eqp_id in (100000006054840,100000006054810,100000006054850);
+
+--6. select using null predicate
+select * from mnl_eqm_eqp_master where eqp_yr_built is not null;
+
+--7. select using distinct
+select distinct(eqp_size_type) from mnl_eqm_eqp_master;
+
+--8. select using like predicate
+select * from mnl_eqm_eqp_master where eqp_num like 'KFXU%';
+  
