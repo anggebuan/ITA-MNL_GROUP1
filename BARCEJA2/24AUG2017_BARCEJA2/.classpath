@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/app/BARCEJA2/Oracle/jdbc/lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="C:/app/BARCEJA2/Oracle/jdbc/lib/ojdbc8_g.jar"/>
+	<classpathentry kind="lib" path="C:/app/BARCEJA2/Oracle/jdbc/lib/ojdbc8dms.jar"/>
+	<classpathentry kind="lib" path="C:/app/BARCEJA2/Oracle/jdbc/lib/ojdbc8dms_g.jar"/>
+	<classpathentry kind="lib" path="C:/app/BARCEJA2/Oracle/jdbc/lib/simplefan.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/hibernate-commons-annotations-4.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/hibernate-core-4.2.21.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Hibernate all/hibernate + oracle jars/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Spring aspect jars/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Spring aspect jars/aspectj-1.6.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Spring aspect jars/aspectj-weaver.jar"/>
+	<classpathentry kind="lib" path="C:/Users/barceja2/Desktop/installer/Spring aspect jars/aopalliance-.jar"/>
+	<classpathentry kind="lib" path="C:/spring/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/spring/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aop-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aop-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aop-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aspects-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aspects-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-aspects-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-beans-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-beans-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-beans-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-support-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-support-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-context-support-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-core-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-core-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-core-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-expression-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-expression-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-expression-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-tomcat-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-tomcat-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-instrument-tomcat-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jdbc-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jdbc-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jdbc-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jms-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jms-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-jms-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-messaging-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-messaging-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-messaging-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-orm-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-orm-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-orm-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-oxm-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-oxm-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-oxm-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-test-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-test-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-test-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-tx-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-tx-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-tx-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-web-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-web-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-web-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-portlet-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-portlet-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-webmvc-portlet-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-websocket-4.3.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-websocket-4.3.8.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/spring/spring-framework-4.3.8.RELEASE-dist/spring-framework-4.3.8.RELEASE/libs/spring-websocket-4.3.8.RELEASE-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
