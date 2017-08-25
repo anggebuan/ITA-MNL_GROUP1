@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Math</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+		<input class="text" size="35" name="numeric" id="numeric"> <br>
+		<input type="submit" class="button" size="35"  value="Find if Numeric" onclick="getPrime();">
+
+	<p id="log"></p>
+
+	<script>
+
+		function getPrime() {
+			var number = document.getElementById("numeric").value;
+			var allnumbers = "["
+			var flag;
+for(var i =2;i<=number;i++){
+flag=0;
+for(var x=1;x<i;x++){
+if(i%x==0){
+flag+=1;
+}
+}
+if(flag==1){
+allnumbers+=x+", ";
+}
+
+}
+document.getElementById("log").innerHTML = allnumbers.substring(0,allnumbers.length - 2) +"]";
+}
+		
+	</script>
+</body>
+</html>

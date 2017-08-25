@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Math</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+
+	
+		<input type="text" class="text" size="35" name="amount" id="amount"> <br>
+		<input type="submit" class="button" size="35"  value="Camelize it!" onclick="camelcasing();">
+	
+	<p id="log"></p>
+
+	<script>
+
+		function camelcasing() {
+		
+			var toCamelize = document.getElementById("amount").value;
+			var splitten = toCamelize.split(" ");
+			document.getElementById("log").innerHTML = splitten[0].charAt(0).toUpperCase();
+			for(var i = 0; i<splitten.length;i++){
+			splitten[i] = splitten[i].charAt(0).toUpperCase() + splitten[i].substring(1,splitten[i].length);
+			}
+			document.getElementById("log").innerHTML = splitten.join("");
+		}
+		
+	</script>
+</body>
+</html>
