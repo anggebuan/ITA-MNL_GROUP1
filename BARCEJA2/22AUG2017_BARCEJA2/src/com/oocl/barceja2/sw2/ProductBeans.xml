@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:aop = "http://www.springframework.org/schema/aop"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+   http://www.springframework.org/schema/aop 
+   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+   <aop:aspectj-autoproxy/>
+   
+	<bean id="ProductList" class="com.oocl.barceja2.sw2.ProductsClass">
+	    <property name = "bookList">
+	        <list>
+	            <value>Diary of a wimpy kid 1</value>
+	            <value>Diary of a wimpy kid 2</value>
+	            <value>Diary of a wimpy kid 3</value>
+	            <value>Diary of a wimpy kid 4</value>  
+	        </list>
+	    </property>
+	</bean>
+
+   <!-- Definition for logging aspect -->
+   <bean id = "logging" class = "com.oocl.barceja2.sw2.Logging">
+   </bean>
+      
+</beans>
