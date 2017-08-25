@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id = "A" class = "com.oocl.tengkh.hw4.A">
+	<property name = "order">
+		<bean id = "order" class = "com.oocl.tengkh.hw4.Order">
+			<property name = "item" value = "San Miguel Ligt Apple"></property>
+			<property name = "price" value = "35PHP"></property>
+			<property name = "address" value = "Holiday Inn"></property>
+		</bean>
+	</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="order" class="com.oocl.escobjo.hw.A">
+   		<property name = "o">
+   		<bean id="order_items" class="com.oocl.escobjo.hw.Order_Items">
+   		
+		<property name="item" value = "Item: Cookies and Cream"></property>
+		
+		<property name="qty" value = "Number of Items: 10"> </property>
+		<property name="price" value = "Price: P10.00"></property>	
+		</bean>
+   		</property>
+   
+   	
+	</bean>    
+	
+</beans>

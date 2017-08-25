@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="name" class="com.oocl.escobjo.hw.NetworkManager">
+		<property name="name">
+			<bean id = "emp_name" class = "com.oocl.escobjo.hw.Employee"/>
+		</property>
+	</bean>    
+   
+   
+   <bean id="role" class="com.oocl.escobjo.hw.NetworkManager">
+		<property name="role">
+			<bean id = "emp_role" class = "com.oocl.escobjo.hw.Employee"/>
+		</property>
+	</bean> 
+	
+	   
+   <bean id="employee_id" class="com.oocl.escobjo.hw.NetworkManager">
+		<property name="employee_id">
+			<bean id = "emp_id" class = "com.oocl.escobjo.hw.Employee"/>
+		</property>
+	</bean> 
+</beans>

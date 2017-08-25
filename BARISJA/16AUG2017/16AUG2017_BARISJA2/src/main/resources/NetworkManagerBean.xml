@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+
+	<bean id="networkManager" class="com.oocl.barisja2.hw2.NetworkManager"
+		init-method="init" destroy-method="destroy">
+		<property name="url" value="http://www.google.com" />
+	</bean>
+</beans>

@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="employeeId" class="com.oocl.tengkh.sw2.Employees" scope="singleton">
+		<property name="employeeId" value = "0927"></property>
+	</bean>
+	   <bean id="name" class="com.oocl.tengkh.sw2.Employees">
+		<property name="name" value = "Khimberlyjhyms Teng" ></property>
+	</bean>
+	   <bean id="role" class="com.oocl.tengkh.sw2.Employees">
+		<property name="role" value = "Programmer" ></property>
+	</bean>
+   
+ </beans>

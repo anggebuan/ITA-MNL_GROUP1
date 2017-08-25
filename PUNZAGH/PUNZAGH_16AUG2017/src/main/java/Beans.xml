@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<!-- Start Trial 1 -->
+	<bean id="helloSpring" class="com.oocl.punzagh.trial1.HelloSpringTest"
+		scope="singleton">
+		<property name="message" value="Hello World!" />
+	</bean>
+	<!-- End Trial 1 -->
+
+
+	<!-- Start Trial 2 -->
+	<bean id="helloSpring2" class="com.oocl.punzagh.trial2.HelloSpringTest"
+		scope="singleton" init-method="init" destroy-method="destroy">
+		<property name="message" value="Hello World!" />
+	</bean>
+	<!-- End Trial 2 -->
+	<!-- Using Ref (not working since code structure has been changed <bean 
+		id = "circle" class = "com.oocl.punzagh.sw4.Circle" > <property name = "shape" 
+		ref="shape"> </property> </bean> <bean id = "triangle" class = "com.oocl.punzagh.sw4.Triangle" 
+		> <property name = "shape" ref="shape"> </property> </bean> <bean id ="shape" 
+		class = "com.oocl.punzagh.sw4.Shape"></bean> -->
+	<!-- Start of SW2 -->
+	<bean id="drawcircle" class="com.oocl.punzagh.sw2.Drawing">
+		<property name="shape">
+			<bean id="circleobject" class="com.oocl.punzagh.sw2.Circle" />
+		</property>
+	</bean>
+
+	<bean id="drawtriangle" class="com.oocl.punzagh.sw2.Drawing">
+		<property name="shape">
+			<bean id="triangleobject" class="com.oocl.punzagh.sw2.Triangle" />
+		</property>
+	</bean>
+	<!-- End of SW2 -->
+
+	<!-- Start of SW3 -->
+	<bean id="employee" class="com.oocl.punzagh.sw3.Employee" scope="singleton">
+		<property name="name" value="Ghino Punzalan" />
+		<property name="role" value="Programmer" />
+		<property name="employee_id" value="1" />
+	</bean>
+	<!-- End of SW3 -->
+
+	<!-- Start of HW1 -->
+	<bean id="a" class="com.oocl.punzagh.hw1.A" scope="singleton">
+		<property name="Order">
+			<bean class="com.oocl.punzagh.hw1.Order">
+				<property name="item" value="T Gel" />
+				<property name="price" value="6900" />
+				<property name="address" value="Somewhere Address" />
+			</bean>
+		</property>
+
+	</bean>
+	<!-- End of HW1 -->
+
+	<!-- Start of HW2 -->
+	<bean id="networkmgr" class="com.oocl.punzagh.hw2.NetworkManager"
+		scope="singleton" init-method="init" destroy-method="destroy">
+		<property name="httpcon" ref="httpcon">
+		</property>
+	</bean>
+	<bean id="httpcon" class="com.oocl.punzagh.hw2.HttpConnection"
+		scope="singleton">
+		<property name="httpcon" ref="httpcon">
+		</property>
+	</bean>
+	<!-- End of HW2 -->
+</beans>
