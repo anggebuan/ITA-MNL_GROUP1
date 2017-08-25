@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reverse a String</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Input text: 
+	<input type="text" value="" id="sampleString">
+	<br>
+	<input type="submit" value="Get Reverse" onclick="reverseString()">
+	</form> 
+	<p id="result"></p>
+	<script>
+	function reverseString(){
+		var stringValue = document.getElementById("sampleString").value;
+		var charArray = stringValue.split("");
+		var newString = "";
+		for(var x = charArray.length-1; x>=0; x--){
+			newString = newString + charArray[x];
+		}
+		document.getElementById("result").innerHTML = newString;
+	}
+	</script>
+  </body>
+</html>

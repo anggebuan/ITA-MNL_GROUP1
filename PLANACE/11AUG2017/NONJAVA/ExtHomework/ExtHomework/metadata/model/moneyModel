@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "moneyModel"
+    },
+    "designerId": "cffbb9e7-d0e5-45b2-bdc3-278d4d9abd1e",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "year"
+            },
+            "designerId": "75a0fb0a-e928-41ef-85d2-e3ff514d1962"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "month"
+            },
+            "designerId": "b03320bc-eee9-4955-a4a3-c4ac52089428"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "money"
+            },
+            "designerId": "14c5a82f-8aff-4027-a962-822e4fc55703"
+        }
+    ]
+}

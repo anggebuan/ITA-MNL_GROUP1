@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Math</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+
+	
+		<input type="number" class="text" size="35" name="amount" value="0" id="amount" onkeypress="return isNumberKey(event)"  min="0"> <br>
+		<input type="submit" class="button" size="35"  value="Factorize" onclick="factorize()">
+	
+	<p id="log"></p>
+
+	<script>
+
+
+		
+		function factorize() {
+			var num = document.getElementById("amount").value;
+			var product = 1;
+			var ctr = 1;
+			while(ctr<=num){
+				product = product * ctr;
+				ctr++;
+			}
+			document.getElementById("log").innerHTML = "Product: " + product;
+		}
+		
+		function isNumberKey(evt){
+		    var charCode = (evt.which) ? evt.which : event.keyCode
+		    if (charCode > 31 && (charCode < 48 || charCode > 57))
+		        return false;
+		    return true;
+		}
+
+	</script>
+</body>
+</html>

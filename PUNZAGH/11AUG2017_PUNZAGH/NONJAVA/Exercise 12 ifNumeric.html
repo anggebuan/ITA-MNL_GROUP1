@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Math</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+
+	
+		<input class="text" size="35" name="numeric" id="numeric"> <br>
+		<input type="submit" class="button" size="35"  value="Find if Numeric" onclick="isNumeric();">
+	
+	<p id="log"></p>
+
+	<script>
+
+		function isNumeric() {
+			var isNumber = document.getElementById("numeric").value;
+			if(!isNaN(parseFloat(isNumber))&&isFinite(isNumber)){
+			document.getElementById("log").innerHTML = "true";
+			}else{
+			document.getElementById("log").innerHTML = "false";
+			}
+		}
+		
+	</script>
+</body>
+</html>

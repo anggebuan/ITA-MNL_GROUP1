@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Homework</title>
+</head>
+<body onload="draw();">
+	<h1>Homework3: Smiley</h1>
+	<p>3. Write a JavaScript program to draw the following diagram.</p>
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+	<script>
+		function draw() {
+			var cir = document.getElementById("myCanvas").getContext("2d");
+			var num = 0;
+			for (var y = 0; y < 6; y++) {
+				for (var x = 0; x < 6; x++) {
+					cir.fillStyle = "rgb(" + 0 + "," + 0 + "," + Math.floor(255 - 50 * y) + ")";
+					cir.beginPath();
+					if (y === num && x === num) {
+						cir.arc((25 + x * 80) , (30 + y * 50), 20, 0, (Math.PI * 2), true);
+						cir.fill();
+						cir.stroke();
+					}
+				}
+				num++;
+			}
+		}
+		draw();
+	</script>
+</body>
+</html>

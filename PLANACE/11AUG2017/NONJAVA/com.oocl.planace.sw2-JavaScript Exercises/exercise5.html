@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Current Time and Date</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	<input type="submit" value="Get day and time" onclick="getDay()">
+	</form> 
+	<p id="todayIs"></p>
+	<p id="currentTime"></p>
+	<script>
+	function getDay(){
+		var todayDate = new Date();
+		var dayOfWeek = "";
+		var amOrPm = "";
+		var hours = "";
+		
+		switch(todayDate.getDay()){
+			case 0:
+				dayOfWeek = "Sunday";
+				break;
+			case 1:
+				dayOfWeek = "Monday";
+				break;
+			case 2:
+				dayOfWeek = "Tuesday";
+				break;
+			case 3:
+				dayOfWeek = "Wednesday";
+				break;
+			case 4:
+				dayOfWeek = "Thursday";
+				break;
+			case 5:
+				dayOfWeek = "Friday";
+				break;
+			case 6:
+				dayOfWeek = "Saturday";
+				break;
+				
+		}
+		
+		if(todayDate.getHours() > 11)
+			amOrPm = "PM";
+		else
+			amOrPm = "AM";
+		
+		if(todayDate.getHours() == 0 || todayDate.getHours() == 12)
+			hours = 12;
+		else if(todayDate.getHours() < 12)
+			hours = todayDate.getHours();
+		else
+			hours = todayDate.getHours() - 12;
+		
+		document.getElementById("todayIs").innerHTML = "Today is: " + dayOfWeek;		
+		document.getElementById("currentTime").innerHTML = "Current time is: " + hours + " " + amOrPm + " : " + todayDate.getMinutes() + " : " + todayDate.getSeconds();
+	}
+	</script>
+  </body>
+</html>	

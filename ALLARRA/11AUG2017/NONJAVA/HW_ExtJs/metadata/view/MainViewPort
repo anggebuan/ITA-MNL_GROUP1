@@ -1,0 +1,120 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainViewPort"
+    },
+    "designerId": "222416be-4cf9-476d-8432-473571c832d7",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "7ce007b3-69a8-45f5-b1b8-1c301e57e332",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "height": 239,
+                        "title": "Registrayion to Pedro website"
+                    },
+                    "designerId": "60171290-a91e-4202-918f-f6662b03588c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 94,
+                                "layout": "anchor",
+                                "width": 471
+                            },
+                            "designerId": "f1b124df-f129-4b09-bc71-1e304d72be69",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Username",
+                                        "id": "userTb",
+                                        "layout|anchor": null,
+                                        "width": 427
+                                    },
+                                    "designerId": "234244c3-8a43-4c2f-95d0-928ac4e0a258"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Password",
+                                        "id": "pass1tb",
+                                        "width": 427
+                                    },
+                                    "designerId": "81a8e29b-34c3-44fe-a41e-70890029e862"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "createButton",
+                                "text": "Create Account"
+                            },
+                            "designerId": "68137d1d-1656-4953-ad58-338e2be63697",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onCreateButtonClick",
+                                        "implHandler": [
+                                            "Ext.MessageBox.alert(\"PedroSite\",\"test\");\r",
+                                            "console.log(userTb.value);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "616a0e26-50af-475a-8ff0-9565359dab4c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

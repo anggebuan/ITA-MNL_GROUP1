@@ -1,0 +1,165 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport1"
+    },
+    "designerId": "4cc27a4b-13fd-438c-9bf6-56f126af66a0",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 359,
+                "layout": "absolute",
+                "title": "Planet",
+                "width": 548
+            },
+            "designerId": "70f218ac-e7ee-41fd-b4cc-d3b817238eea",
+            "cn": [
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Enter anything:",
+                        "layout|anchor": "100%"
+                    },
+                    "designerId": "2b442ea5-12f6-41a6-8091-09c7eecd61a9"
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 100,
+                        "title": "List of Planets",
+                        "width": 520
+                    },
+                    "designerId": "1de8f554-fbe2-4c64-bad1-8ceb9b8e7b9a",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "Name"
+                            },
+                            "designerId": "95f3aa2a-22db-49fb-b11d-e3984e6447da"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "number",
+                                "text": "Weight"
+                            },
+                            "designerId": "9fe2f056-fe3d-437e-95f4-1a400d65c10d"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "text": "Number of Aliens",
+                                "width": 173
+                            },
+                            "designerId": "a508d40c-e5f6-4ea5-a4b7-fe1ee0452694"
+                        },
+                        {
+                            "type": "Ext.grid.column.Boolean",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "bool",
+                                "text": "Number of Humans",
+                                "width": 180
+                            },
+                            "designerId": "efe47bbd-d3d6-41c9-8203-741f83a33763"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "Planet"
+                            },
+                            "designerId": "05950a3c-4b1b-4183-b6be-e27db6f7bb7d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 30,
+                        "layout|x": 20,
+                        "layout|y": 270,
+                        "text": "Back"
+                    },
+                    "designerId": "b76674d0-ced4-4844-8059-10657ad2e6a8",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "this.push(Ext.create('MyApp.view.MyViewport',{\r",
+                                    "            title:'Test' }));"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "07280dc4-d265-40b7-a554-8e3492205652"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

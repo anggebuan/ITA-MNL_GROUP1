@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Homework</title>
+</head>
+<body onload = "draw();">
+<h1>Homework2: Two Intersecting Rectangles</h1>
+<p>2. Write a JavaScript program to draw two intersecting rectangles, one of which has alpha transparency.</p>
+<canvas id = "myCanvas" width="500" height="500"></canvas>
+<script>
+	function draw(){
+		var draw = document.getElementById("myCanvas");
+			var rectangle = draw.getContext('2d');
+			
+			rectangle.fillStyle = "#0000ff";
+			rectangle.fillRect (20,20,200,100);
+			
+			rectangle.fillStyle = "rgba(300, 0, 200, 0.9)";
+			rectangle.fillRect (80,60,200,100);
+	}
+
+</script>
+</body>
+</html>

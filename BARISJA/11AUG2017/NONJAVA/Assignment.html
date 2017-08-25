@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(95, 50, 75, 50);
+
+//Turn transparency on
+ctx.globalAlpha = 0.2;
+ctx.fillStyle = "blue"; 
+ctx.fillRect(115, 70, 75, 50); 
+
+</script>
+
+<canvas id="myCanvas2" width="125" height="125" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+ctx.strokeRect(37.5, 37.5, 50, 50);
+ctx.lineWidth = "14";
+ctx.strokeRect(25, 25, 75, 75);
+
+</script>
+
+<canvas id="myCanvas3" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas3");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(100, 75, 35, 0, 1 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(80, 60, 5, 0, 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(118, 60, 5, 0, 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(75, 60);
+ctx.lineTo(123, 60);
+ctx.stroke();
+</script> 
+
+<canvas id="myCanvas4" width="125" height="125" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(25, 25, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#ffffff";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(40, 40, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#ebebeb";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(55, 55, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#b8b8b8";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(70, 70, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#8f8f8f";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(85, 85, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#666666";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(100, 100, 5, 0, 2 * Math.PI);
+ctx.fillStyle = "#333333";
+ctx.fill();
+ctx.stroke();
+
+</script> 
+</body>
+</html>

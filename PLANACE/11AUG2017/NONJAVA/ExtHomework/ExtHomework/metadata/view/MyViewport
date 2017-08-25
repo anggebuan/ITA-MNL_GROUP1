@@ -1,0 +1,200 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MyViewport"
+    },
+    "designerId": "dee939a5-2870-4be8-9ee5-528336315b30",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "layout": "auto",
+                "title": "Input"
+            },
+            "designerId": "0a6fd9b5-ae94-4267-934f-ef820f7035f5",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "year",
+                        "dock": "left",
+                        "fieldLabel": "Year:",
+                        "id": "year",
+                        "itemId": "year",
+                        "name": "year"
+                    },
+                    "designerId": "c766884f-0b6a-4675-b530-857a8c38ca49"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "month",
+                        "dock": "left",
+                        "fieldLabel": "Month",
+                        "id": "month",
+                        "itemId": "month",
+                        "name": "month"
+                    },
+                    "designerId": "a53d079e-f37b-4623-b1cd-b754c0d30762"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "money",
+                        "dock": "left",
+                        "fieldLabel": "Money",
+                        "id": "money",
+                        "itemId": "money",
+                        "name": "money"
+                    },
+                    "designerId": "ef5774a3-cf65-415f-a3f9-66abf5720015"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom"
+                    },
+                    "designerId": "dcb5a722-b50b-4849-9258-29abd492cbdd",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Fill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "designerId": "a00557ad-40cb-4711-b337-0a91ea55ac8e"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "addDetails",
+                                "itemId": "addDetails",
+                                "layout|flex": null,
+                                "text": "Add"
+                            },
+                            "designerId": "67444f92-c3ac-467a-b255-c3bd872af324"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "showChart",
+                                "itemId": "showChart",
+                                "layout|flex": null,
+                                "text": "Show Chart"
+                            },
+                            "designerId": "d3bc22b9-bca1-42cd-ba9b-81b2631c9e6b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "gridMoney",
+                "title": "Money Saved"
+            },
+            "designerId": "5bd18089-13d5-4177-80e0-ebd0822f98a1",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "Year"
+                    },
+                    "designerId": "a5d9f619-48f7-4abc-94b6-00f6dde10d58"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Month"
+                    },
+                    "designerId": "4990a4fd-1474-4759-9752-c730f98c2f6f"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "number",
+                        "text": "Money"
+                    },
+                    "designerId": "6e9347db-f0db-4ddd-8aa7-734da84e649b"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "3c6abfb8-4388-4164-8956-e9a1cb3147c9"
+                }
+            ]
+        }
+    ]
+}
