@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9uMZcIllEeeavuZg60qiEw" name="ALLARRA_25AUG17_UML_DPMCP FLOW">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_9uQq4IllEeeavuZg60qiEw" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_9uUVQIllEeeavuZg60qiEw" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_9uab4IllEeeavuZg60qiEw" name="Activity2"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_G09CQIlpEeeavuZg60qiEw" name="Student">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5Cp6kIlpEeeavuZg60qiEw" general="_mVqP8IlpEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_5qRUMIlpEeeavuZg60qiEw" general="_KUXIYIlpEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_7e1pIIlpEeeavuZg60qiEw" general="_Ms8wYIlpEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_-W4NQIlpEeeavuZg60qiEw" general="_Sm60cIlpEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="__cKaUIlpEeeavuZg60qiEw" general="_tC1SkIlpEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_RSCPsIlqEeeavuZg60qiEw" general="_OGhV8IlqEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IFXhQIlpEeeavuZg60qiEw" name="University">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KUXIYIlpEeeavuZg60qiEw" name="Enroll Subjects"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ms8wYIlpEeeavuZg60qiEw" name="Change Subject"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Sm60cIlpEeeavuZg60qiEw" name="Drop Subject"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZqXpEIlpEeeavuZg60qiEw" name="add Schedule">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Ie8pcIlqEeeavuZg60qiEw" general="_GWvm0IlqEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mVqP8IlpEeeavuZg60qiEw" name="Registration"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tC1SkIlpEeeavuZg60qiEw" name="Pay tuition">
+      <generalization xmi:type="uml:Generalization" xmi:id="_KdQJMIlqEeeavuZg60qiEw" general="_1JnzgIlpEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OGhV8IlqEeeavuZg60qiEw" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UJtncIlqEeeavuZg60qiEw" name="Network DB">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UJtncYlqEeeavuZg60qiEw" general="_GWvm0IlqEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_cN-Y0IlqEeeavuZg60qiEw" name="keep Record" client="_mVqP8IlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_gIK9gIlqEeeavuZg60qiEw" client="_KUXIYIlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_jZ-sgIlqEeeavuZg60qiEw" client="_ZqXpEIlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_mGfWEIlqEeeavuZg60qiEw" client="_Ms8wYIlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_noEdkIlqEeeavuZg60qiEw" client="_Sm60cIlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_qu5roIlqEeeavuZg60qiEw" client="_tC1SkIlpEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Hho3MIlrEeeavuZg60qiEw" name="Generated views">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Wbu38IlrEeeavuZg60qiEw" general="_zLf58IlpEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_TlwwYIlrEeeavuZg60qiEw" client="_UJtncIlqEeeavuZg60qiEw" supplier="_Hho3MIlrEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ixGSIIlrEeeavuZg60qiEw" name="Limited views">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ixGSIYlrEeeavuZg60qiEw" general="_zLf58IlpEeeavuZg60qiEw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_nnPhsIlrEeeavuZg60qiEw" general="_GWvm0IlqEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_mwL94IlrEeeavuZg60qiEw" client="_jZ-sgIlqEeeavuZg60qiEw" supplier="_ixGSIIlrEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DQ4-QIlsEeeavuZg60qiEw" name="Update Student Balance">
+      <generalization xmi:type="uml:Generalization" xmi:id="_DQ4-QYlsEeeavuZg60qiEw" general="_1JnzgIlpEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_IPatwIlsEeeavuZg60qiEw" client="_DQ4-QIlsEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_zLf58IlpEeeavuZg60qiEw" name="Registrar">
+    <generalization xmi:type="uml:Generalization" xmi:id="_EtZDYIlqEeeavuZg60qiEw" general="_ZqXpEIlpEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_1JnzgIlpEeeavuZg60qiEw" name="Cashier">
+    <generalization xmi:type="uml:Generalization" xmi:id="_HnhnUIlsEeeavuZg60qiEw" general="_DQ4-QIlsEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GWvm0IlqEeeavuZg60qiEw" name="Instructor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_GWvm0YlqEeeavuZg60qiEw" general="_ZqXpEIlpEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_B9FCcIlrEeeavuZg60qiEw" name="DBA">
+    <generalization xmi:type="uml:Generalization" xmi:id="_DbikgIlrEeeavuZg60qiEw" general="_UJtncIlqEeeavuZg60qiEw"/>
+  </packagedElement>
+</uml:Model>
