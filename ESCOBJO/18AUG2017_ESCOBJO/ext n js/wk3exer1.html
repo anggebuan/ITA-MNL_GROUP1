@@ -1,0 +1,55 @@
+<html>
+   
+   <head>
+      <title>JavaScript Animation</title>
+      
+      <script type="text/javascript">
+         <!--
+           function createTable()
+				{
+				rn = window.prompt("Input number of rows", 1);
+				cn = window.prompt("Input number of columns",1);
+				  
+				 for(var r=0;r<parseInt(rn,10);r++)
+				  {
+				  // var x=document.getElementById('myTable').insertRow();
+				   var x=document.getElementById('myTable').insertRow(r);
+				   for(var c=0;c<parseInt(cn,10);c++)  
+					{
+				// var y=  x.insertCell();
+				 var y=  x.insertCell(c);
+					// y.innerHTML="Row-"+r+" Column-"+c; 
+					 y.innerHTML="_____"+"_____"; //rn + c
+					}
+				   }
+				}
+            window.onload =init;
+         //-->
+      </script>
+        <style type="text/css">  
+	  body {margin: 30px;}  </style> 
+   </head>
+   
+   <body bgcolor ="#EED2E5">
+   
+      <form align="center"> 
+	  <input type="button" onclick="createTable()" value="Create a table">
+	  <br><br>
+	 <table id="myTable" border="5" align="center">  </table>
+	 </form> 
+
+	 <form align="center"> 	
+<p align="center" >	 
+		<table id="myTable" border="5">
+	<tr  bgcolor = "#8EF38E"><td>Foods</td>
+	<td>Eater</td></tr>
+	<tr bgcolor = "#EDF0CE"><td>Sinigang</td>
+	<td>Tinola</td></tr>
+	<tr bgcolor = "#EDF0CE"><td>Jossel</td>
+	<td>Ezra</td></tr>
+	</table>
+	</p>
+		  </form>
+      
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+   
+   <head>
+      <title>JavaScript Animation</title>
+      
+      <script type="text/javascript">
+         <!--
+            var imgObj = null;
+            
+            function init(){
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+			   imgObj.style.top  = '0px'; 
+            }
+            
+            function moveRight(){
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+			 
+            }
+			function moveLeft(){
+                imgObj.style.left = parseInt(imgObj.style.left) + -10 + 'px';
+            }
+			function moveDown(){
+			 imgObj.style.top = parseInt(imgObj.style.top) + 10 + 'px';
+            }
+			function moveUp(){
+              
+               imgObj.style.top = parseInt(imgObj.style.top) + -10 + 'px';
+            }
+			
+			function bounce(timeFraction) {
+			  for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+				if (timeFraction >= (7 - 4 * a) / 11) {
+				  return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+				}
+			  }
+			}
+            
+            window.onload =init;
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+   
+      <form align="center">
+         <img id="myImage" src="sakura.png" />
+         <p>Move the image by clicking the cursors.  ^__^</p>
+		   <input type="button" value="/\" onclick="moveUp();" /><br>
+		  <input type="button" value="<" onclick="moveLeft();" />
+		   <input type="button" value="O" onclick="bounce();" /><br><br>
+         <input type="button" value=">" onclick="moveRight();" /><br>	 
+		
+         <input type="button" value="\/" onclick="moveDown();" /><br><br>
+		
+      </form>
+      
+   </body>
+</html>

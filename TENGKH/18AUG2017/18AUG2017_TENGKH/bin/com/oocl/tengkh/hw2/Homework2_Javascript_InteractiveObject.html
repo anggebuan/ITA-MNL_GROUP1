@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Interactive Object</title>
+<style type="text/css">
+#container {
+	height: 600px;
+	position: relative;
+	background: white;
+}
+
+#animate {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-color: blue;
+}
+</style>
+<script type="text/javascript">
+	var obj = null, left = 0, animate;
+
+	function initialize() {
+		obj = document.getElementById('animate');
+		obj.style.position = 'relative';
+		obj.style.left = '0px';
+	}
+
+	function MoveRight() {
+		obj.style.left = parseInt(obj.style.left) + 20 + 'px';
+	}
+
+	function MoveDown() {
+		obj.style.top = parseInt(obj.style.left) + 20 + 'px';
+	}
+	
+	function MoveLeft() {
+		obj.style.left = parseInt(obj.style.left) - 20 + 'px';
+	}
+	
+	function MoveUp() {
+		obj.style.top = parseInt(obj.style.left) - 20 + 'px';
+	}
+
+	window.onload = initialize;
+	
+	
+</script>
+</head>
+<body>
+	<h1>Interactive Object</h1>
+	<p>2) Use JavaScript to create a complex animation having, but not
+		limited to, elements Object movements.</p>
+
+	<input type="button" onclick="MoveRight();" value="Move Right">
+	<input type="button" onclick="MoveDown();" value="Move Down">
+	<input type="button" onclick="MoveLeft();" value="Move Left">
+	<input type="button" onclick="MoveUp();" value="Move Up">
+
+	<form style="border: solid; background: blue;">
+		<div id="container">
+
+			<img id="animate" src="giphy.gif">
+		</div>
+
+	</form>
+
+</body>
+</html>
