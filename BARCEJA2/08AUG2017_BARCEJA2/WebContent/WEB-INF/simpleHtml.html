@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Me awesome CSS linking</title>
+
+<link rel="stylesheet" type="text/css" href="./htmlcsslink.css"/>
+<script type="text/javascript">	
+	function isNumeric(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+
+	function askForInitialBalance() {
+		var balance = prompt("Input initial balance: ");
+		if (isNumeric(balance)) {
+			document.getElementById("balancefield").value = balance;
+		}else{
+			alert("Please input numbers only.")
+		}
+
+	};
+	window.onload = askForInitialBalance;
+</script>
+</head>
+<h1 id="header1">FORM OF YER LIFE</h1>
+<h2>
+<img src="http://memedump.com/d/4745-1/1252917363974.jpg">
+</h2>
+<h3 id="headertri">Transaction</h3>
+<form>
+<ul class="form-style-1">
+    <li><label>Deposit: <span class="required">*</span></label>
+    <input type="text" name="field1" class="field-divided" placeholder="deposit" id="depositfield" />
+    <li>
+        <label>Withdraw: <span class="required">*</span></label>
+        <input type="text" name="field2" class="field-divided" placeholder="withdraw" id="withdrawfield"/>
+    </li>
+    <li>
+        <label>balance:<span class="required">*</span></label>
+         <input type="text" name="field2" class="field-divided" placeholder="withdraw" readonly=true id="balancefield"/>
+        
+    </li>
+    <li>
+    	<input type="button" value="Submit" onclick="validateWith()"/>
+    	<input type="button" value="Withdraw" onclick="withdrawReadOnly()" id="widbtn"/>
+        <input type="button" value="Deposit" onclick="depositReadOnly()" id="depbtn"/>
+        
+    </li>
+</ul>
+</form>
+<body>
+<script>
+
+var deposit;
+var balance;
+var withdraw;
+var isWidDep=null;
+
+
+function clearFields(){
+	document.getElementById("withdrawfield").value = "";
+	document.getElementById("depositfield").value = "";
+};
+
+function depositReadOnly(){
+	clearFields();
+	document.getElementById("depositfield").readOnly = false;
+	document.getElementById("withdrawfield").readOnly = true;
+	isWidDep = "dep";
+	document.getElementById("widbtn").readOnly = true;
+	
+	
+};
+
+function withdrawReadOnly(){
+	clearFields();
+	document.getElementById("withdrawfield").readOnly = false;
+	document.getElementById("depositfield").readOnly = true;
+	isWidDep = "wid";
+	document.getElementById("depbtn").readOnly = true;
+};
+function validateWith(){
+	var withd = document.getElementById("withdrawfield").value;
+	var deps = document.getElementById("depositfield").value;
+	var bal = document.getElementById("balancefield").value;
+	if(isWidDep != null){
+		if (isWidDep == "dep"){
+			bal = parseInt(bal) + parseInt(deps);
+			document.getElementById("balancefield").value=bal;
+			alert("Success deposit");
+		}else if(isWidDep == "wid"){
+			if (parseInt(bal) >= parseInt(withd)){
+				bal = bal - withd; 
+				document.getElementById("balancefield").value=bal;
+				alert("Successfully withdraw");
+				clearFields();
+			}else{
+				alert("Current balance exceeds desired withdrawal. Please retry");
+				clearFields();
+			}
+		}
+	}else{
+		alert("Please choose Withdraw or Deposit first.");
+	}
+	
+};
+function lemetry(){
+	alert("Record has been saved.");
+	
+}
+</script>
+</body>
+</html>
