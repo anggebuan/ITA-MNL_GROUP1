@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oMOxAIleEeeavuZg60qiEw" name="ALLARRA_25AUG17_UML">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_oO1ZEIleEeeavuZg60qiEw" name="Activity1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_oP5JAIleEeeavuZg60qiEw" name="Activity2"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_oQEIIIleEeeavuZg60qiEw" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_oQLc4IleEeeavuZg60qiEw" name="Region1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7gi6UIleEeeavuZg60qiEw" name="Users">
+    <generalization xmi:type="uml:Generalization" xmi:id="_id5YYIliEeeavuZg60qiEw" general="_QWgKoIlhEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9N-3EIlfEeeavuZg60qiEw" name="Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5LmC4IljEeeavuZg60qiEw" general="_2pFfUIliEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_0ACcoIlmEeeavuZg60qiEw" general="_uhIj8IlmEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_AFmkcIlgEeeavuZg60qiEw" name="ATM installers/ATM technician">
+    <generalization xmi:type="uml:Generalization" xmi:id="_zXCDQIljEeeavuZg60qiEw" general="_2pFfUIliEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_RLeG8IllEeeavuZg60qiEw" general="_PjUdYIllEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EpveAIlgEeeavuZg60qiEw" name="Data Analyst">
+    <generalization xmi:type="uml:Generalization" xmi:id="_8dXgMIlkEeeavuZg60qiEw" general="_C_844IlkEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_Gx8HUIllEeeavuZg60qiEw" general="_EeuHgIllEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_O5-iQIlhEeeavuZg60qiEw" name="ATM Transaction">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QWgKoIlhEeeavuZg60qiEw" name="LOGIN"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YcgocIlhEeeavuZg60qiEw" name="Withdraw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_buXawIlhEeeavuZg60qiEw" name="Deposit"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ehTccIlhEeeavuZg60qiEw" name="Paybills"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hG93IIlhEeeavuZg60qiEw" name="Change Pin"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ktU50IlhEeeavuZg60qiEw" name="Check account"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_pWbL4IlhEeeavuZg60qiEw" name="Transfer Money"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_PlmcsIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_ktU50IlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_QryosIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_YcgocIlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_SKhQgIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_buXawIlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_booJsIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_ehTccIlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_ci3kYIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_hG93IIlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_dHOOoIliEeeavuZg60qiEw" client="_QWgKoIlhEeeavuZg60qiEw" supplier="_pWbL4IlhEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2pFfUIliEeeavuZg60qiEw" name="Logs"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8RsGkIliEeeavuZg60qiEw" name="KEEP Log for User" client="_hG93IIlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_E7ZuYIljEeeavuZg60qiEw" name="Print Reciept"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_SItdMIljEeeavuZg60qiEw" client="_pWbL4IlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_amI8gIljEeeavuZg60qiEw" client="_ehTccIlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_dYuY4IljEeeavuZg60qiEw" client="_buXawIlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_eWvgUIljEeeavuZg60qiEw" client="_ktU50IlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_fbDdAIljEeeavuZg60qiEw" client="_YcgocIlhEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_C_844IlkEeeavuZg60qiEw" name="NETWORK DB/Transaction Validation/KeepRecord"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_azZf8IlkEeeavuZg60qiEw" name="Start Transaction if Network is connected" client="_2pFfUIliEeeavuZg60qiEw" supplier="_C_844IlkEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_iIYwgIlkEeeavuZg60qiEw" name="Log Locally" client="_C_844IlkEeeavuZg60qiEw" supplier="_2pFfUIliEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_lRoZYIlkEeeavuZg60qiEw" name="Return data reciept transaction completed" client="_2pFfUIliEeeavuZg60qiEw" supplier="_E7ZuYIljEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EeuHgIllEeeavuZg60qiEw" name="Create Report">
+      <generalization xmi:type="uml:Generalization" xmi:id="_a47DsIllEeeavuZg60qiEw" general="_9N-3EIlfEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_HfLAwIllEeeavuZg60qiEw" client="_C_844IlkEeeavuZg60qiEw" supplier="_EeuHgIllEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PjUdYIllEeeavuZg60qiEw" name="Create Log Report">
+      <generalization xmi:type="uml:Generalization" xmi:id="_XIbNkIllEeeavuZg60qiEw" general="_9N-3EIlfEeeavuZg60qiEw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uhIj8IlmEeeavuZg60qiEw" name="Mount Cash"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_BJVOIIlnEeeavuZg60qiEw" name="Suppy" client="_uhIj8IlmEeeavuZg60qiEw" supplier="_YcgocIlhEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3BRD4IlkEeeavuZg60qiEw" name="DBA">
+    <generalization xmi:type="uml:Generalization" xmi:id="_61j04IlkEeeavuZg60qiEw" general="_C_844IlkEeeavuZg60qiEw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_na3hUIllEeeavuZg60qiEw" name="Network Ad">
+    <generalization xmi:type="uml:Generalization" xmi:id="_na3hUYllEeeavuZg60qiEw" general="_C_844IlkEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_reWk4IllEeeavuZg60qiEw" general="_C_844IlkEeeavuZg60qiEw"/>
+  </packagedElement>
+</uml:Model>
