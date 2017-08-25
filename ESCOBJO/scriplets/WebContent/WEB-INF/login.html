@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="BIG5">
+<link rel="stylesheet" type="text/css" href="D:/ESCOBJO/workspace/TryServlet/css/style.css"/>
+<!--
+<link rel="stylesheet" href="D:/ESCOBJO/workspace/TryServlet/css/bootstrap.min.css">
+<link rel="stylesheet" href="D:/ESCOBJO/workspace/TryServlet/css/font-awesome.min.css">
+<link rel="stylesheet" href="D:/ESCOBJO/workspace/TryServlet/css/plugins.css">
+<link rel="stylesheet" href="D:/ESCOBJO/workspace/TryServlet/css/responsive.css">
+<link rel="stylesheet" href="D:/ESCOBJO/workspace/TryServlet/css/animate.css">
+-->
+<title>Try Servlet Login Page</title>
+</head>
+<!-- <body bgcolor = yellow style="background-image:url('./back.jpg'); background-size: cover"> -->
+<body bgcolor = yellow style="background-image:url('./back.jpg'); background-size: 50.5%">
+
+<font color = pink>
+<br><br>
+<h1 align="center">Hello World!</h1>
+<p align="center">Please give me peace of mind ... </p>
+<br>
+<p align="center"> Thank you ! ^___^ </p>
+<p align="center">
+<br><br>
+<img src="./time.gif" align=center border="0" >
+<img src="./piano.jpg" align=center border="2">
+<img src="./time.gif" align=center border="0">
+<br><br><br>
+
+
+
+
+<!--<input type=button onClick="location.href='tibbr-sel.htm'" value='click here'> -->
+
+<br><br>
+
+
+<input type=button onClick="parent.open('http://v.youku.com/v_show/id_XNDg2MzcxNTg0.html')" value='Dont Worry : ) Just watch this...'>
+
+<br><br><br>
+Please Log in..
+<br>
+Username:<input type="text" id="uname">
+<br />
+Password: <input type="text" id="pword">
+<br /><br />
+
+<!-- 
+<button onclick="document.getElementById('field2').value=
+document.getElementById('field1').value">Login</button>
+ -->
+ 
+  <p align=center id="loginfield"> </p>
+   <p align=center > 
+
+  <input type=button onClick="login()" value='Login'>
+  <input type=button onClick="reset()" value='Reset'>
+ </p>
+
+
+
+<script>
+        
+        var user = "admin";
+        var pass = "admin";
+        var x;
+
+     
+         function login()
+         { 
+           if(document.getElementById('uname').value == user && document.getElementById('pword').value == pass ){
+        	   x="Login Successful ^__^";
+               document.getElementById("loginfield").innerHTML=x;
+			   alert("You are successfully logged in. ^__^");
+			window.open("TryServlet.html");
+           }
+           else
+        	   {
+        	   x="Login Failed :( ";
+               document.getElementById("loginfield").innerHTML=x;
+        	   }
+			   onload();
+            }
+			
+			function reset(){
+			document.getElementById('uname').value = "";
+			document.getElementById('pword').value = "";
+			}
+        </script>
+
+
+<br>
+
+</p></div>
+
+<div align=right>
+ <a href="simpleChatclient.java"  target="_blank">Chat code</a> 
+  <a href="tibbr-sel.html"  target="_blank">Tibbr</a> 
+<p align=center>
+ <a href="#top">Go to top</a> 
+</p>
+</font>
+</body>
+</html>
