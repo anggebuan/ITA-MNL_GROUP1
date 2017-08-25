@@ -1,0 +1,24 @@
+body {
+   /*background-color: #ffffff;*/
+   background-image: url(./th.jpg);
+    
+}
+form.login{
+	text-align: center;
+	font-family: "Verdana", sans-serif;
+	font-style: normal;
+	border-style: ridge;
+	background-image: url(./formbg.jpg);
+	width: 500px;
+	margin: 0 auto;
+	height: 100px; 
+	padding: 10px;
+}
+h1.header {
+	text-align: center;
+	font-size: xx-large;
+	font-family: "Verdana", sans-serif;
+	color: white;
+	font-size: 50px; 
+	
+}

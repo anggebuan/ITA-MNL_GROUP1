@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Kbank Home Page</title>
+<link type="text/css" rel="stylesheet" href="./kbankStyles.css">
+</head>
+<body>
+	<h1 class="header">
+		<b>MY BANK ACCOUNT</b>
+	</h1>
+
+	<form class="ridgeBorder">
+		Deposit Amount: <input type="text" name="tb_deposit" id="tb_deposit" onfocus="if(this.value != ''){this.value = ''}">
+		<input id="btnDepo" onclick="depositMoney();" type="button" value="Deposit" style="width: 100px"><br><br> 
+		Withdraw Amount: <input	type="text" name="tb_withdraw" id="tb_withdraw"	onfocus="if(this.value != ''){this.value = ''}"> 
+		<input id="btnWdraw" onclick="withdrawMoney();" type="button" value="Withdraw" style="width: 100px">
+	</form>
+	
+	<script type="text/javascript">
+		var balance = 0;
+
+
+		function depositMoney() {
+			//debugger;
+			var amountDepot = parseInt(document.getElementById("tb_deposit").value);
+			if (amountDepot != null){
+				if (balance != 0) {
+					balance = (balance + amountDepot);
+					document.getElementById("result").innerHTML = ("Remaining Balance: "
+							+ balance + " PHP");
+					document.getElementById("tb_deposit").value = "";
+				} else {
+					balance = amountDepot;
+					document.getElementById("result").innerHTML = ("Balance: "
+							+ balance + " PHP");
+					document.getElementById("tb_deposit").value = "";
+						
+				}
+			}else{
+				
+				window.confirm("Please input amount to deposit");
+			}
+
+		}
+
+		function withdrawMoney() {
+			debugger;
+			var amountWdraw = parseInt(document.getElementById("tb_withdraw").value);
+			if (amountWdraw <= balance) {
+				balance = (balance - amountWdraw);
+				document.getElementById("result").innerHTML = ("Remaining Balance: "
+						+ balance + " PHP");
+				document.getElementById("tb_withdraw").value = "";
+
+			} else {
+				window.confirm("Insufficient Balance!");
+				document.getElementById("result").innerHTML = ("Remaining Balance: "
+						+ balance + " PHP");
+				document.getElementById("tb_withdraw").value = "";
+			}
+		}
+	</script>
+	<h2>
+		Message
+		<p id="result"></p>
+	</h2>
+
+</body>
+</html>

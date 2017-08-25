@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel='stylesheet' href='./Resources/myfile.css' />
+<script type="text/javascript" src="./Resources/testScript.js"></script>
+<title>Philippine Bank</title>
+
+</head>
+<body>
+	<div>
+		<div id='HeaderContainer' class='divContainer'>
+			<h1 class='classheader'>Banking System for Pedro only</h1>
+		</div>
+		<ul>
+			<li>Home</li>
+			<li>Menu</li>
+			<li>Settings</li>
+			<li>Forums</li>
+		</ul>
+
+	</div>
+	<br>
+	<div id="loginForm">
+	<form>
+		Username<br>
+		<input type="text" id="usernameTb"><br>
+		Pin<br>
+		<input type="password" id="pinTb"><br>
+
+	</form>
+	<br>
+			<button onclick="Login()">Login</button>
+	</div>
+	<p id="test">
+	
+	<br>
+	<br>
+
+	<div id = "transaction">
+		Your Current Balance<br><input type="text" id="balTb"><br><br>
+		<div class="inLineTransact">
+		<span>
+		Deposit
+		<input type="text" id="depositTb" class="messages"></span><text id="depositMes"></text>
+		<br>
+		</div>
+		<br>
+		<div class="inLineTransact">
+		
+		Withdraw
+		<input type="text" id="withdrawTb" class = "messages">
+		<text id = "withdrawMes"></text><br><br>
+		<button onclick="Transact()">Transact</button>
+		</div>
+		
+	</div>
+
+</body>
+</html>

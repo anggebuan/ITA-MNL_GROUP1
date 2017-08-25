@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Banking in Javascript</title>
+</head>
+<body>
+
+
+	
+		Balance: <br> <input type="text" name="balance" value="10000"
+			id="balance" readonly> <br> Amount to Deposit or Withdraw:
+		<input type="number" name="money" value="0" id="money"> <br>
+		<input type="submit" value="Deposit" onclick="depositBalance()">
+		<input type="submit" value="Withdraw" onclick="withdrawBalance()">
+		<input type="submit" value="Reset Balance" onclick="resetBalance()">
+	
+	<p id="result"></p>
+
+	<script>
+		function resetBalance() {
+			document.getElementById("balance").value = 10000;
+			document.getElementById("result").innerHTML = x.hi.value;
+			document.getElementById("money").value = 0;
+		}
+
+		function depositBalance() {
+			var balance = parseInt(document.getElementById("balance").value);
+			var depositAmt = parseInt(document.getElementById("money").value);
+			var newBalance = balance + depositAmt;
+
+			document.getElementById("balance").value = newBalance;
+			document.getElementById("money").value = 0;
+			document.getElementById("result").innerHTML = "Deposited "
+					+ depositAmt + ", new balance is " + newBalance;
+		}
+
+		function withdrawBalance() {
+			var balance = parseInt(document.getElementById("balance").value);
+			var withdrawAmt = parseInt(document.getElementById("money").value);
+			var newBalance;
+			if (withdrawAmt > balance) {
+				var need = withdrawAmt - balance;
+				document.getElementById("result").innerHTML = "Cannot withdraw, current balance is "
+						+ balance
+						+ ", you need "
+						+ need
+						+ " to withdraw "
+						+ withdrawAmt;
+				return;
+			}
+			if (withdrawAmt > 1000) {
+				newBalance = balance - withdrawAmt - 100;
+				document.getElementById("balance").value = newBalance;
+				document.getElementById("money").value = 0;
+				document.getElementById("result").innerHTML = "Withdraw "
+						+ withdrawAmt + ", old balance is " + balance
+						+ ", new balance is " + newBalance
+						+ " with service charge of 100";
+			} else {
+				newBalance = balance - withdrawAmt;
+				document.getElementById("balance").value = newBalance;
+				document.getElementById("money").value = 0;
+				document.getElementById("result").innerHTML = "Withdraw "
+						+ withdrawAmt + ", old balance is " + balance
+						+ ", new balance is " + newBalance
+						+ " without service charge";
+			
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Banking</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+
+		<p>User</p><input type="text" name="user" id="user"> <br>
+		<p>Pass</p><input type="password" name="pass" id="pass"> <br>
+		<input type="submit" value="Login" class="button" onclick="validateLogin()">
+
+	<p id="log"></p>
+
+	<script>
+		function validateLogin(){
+		var users = document.getElementById("user").value;
+		var passs = document.getElementById("pass").value;
+		document.getElementById("user").innerHTML = "Invalid username/password.";
+		if(users=="admin"&&passs=="admin"){
+		location.href="./main.html";
+		}else{
+		document.getElementById("log").innerHTML = "Invalid username/password.";
+		}
+		}
+	</script>
+</body>
+</html>

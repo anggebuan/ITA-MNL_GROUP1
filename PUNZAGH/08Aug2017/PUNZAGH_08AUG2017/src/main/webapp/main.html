@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghie's Banking</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+
+	
+		Balance: <br> <input type="number" name="balance" value="50000"
+			id="balance" readonly> <br>Deposit/Withdraw:
+		<input type="number" class="text" size="35" name="amount" value="0" id="amount" onkeypress="return isNumberKey(event)"  min="0"> <br>
+		<input type="submit" class="button" size="35"  value="Deposit" onclick="depositBalance()">
+		<input type="submit" class="button" size="35"  value="Withdraw" onclick="withdrawBalance()">
+	<p id="log"></p>
+
+	<script>
+
+
+		
+		function withdrawBalance() {
+			var balance = parseInt(document.getElementById("balance").value);
+			var withdrawAmt = parseInt(document.getElementById("amount").value);
+			var newBalance;
+			if (withdrawAmt > balance) {
+				var need = withdrawAmt - balance;
+				document.getElementById("log").innerHTML = "Insufficient Balance, current balance is "
+						+ balance
+						+ ", you need "
+						+ need
+						+ " to withdraw "
+						+ withdrawAmt;
+				return;
+			}
+			if (withdrawAmt >= 5000) {
+				newBalance = balance - withdrawAmt - 100;
+				document.getElementById("balance").value = newBalance;
+				document.getElementById("amount").value = 0;
+				document.getElementById("log").innerHTML = "New balance is $" + newBalance
+						+ " with service charge of 100";
+			} else {
+				newBalance = balance - withdrawAmt;
+				document.getElementById("balance").value = newBalance;
+				document.getElementById("amount").value = 0;
+				document.getElementById("log").innerHTML = "New balance is $" + newBalance
+						+ " without service charge";
+			}
+		}
+		
+		
+		function depositBalance() {
+			var balance = parseInt(document.getElementById("balance").value);
+			var depositAmt = parseInt(document.getElementById("amount").value);
+			var newBalance = balance + depositAmt;
+
+			document.getElementById("balance").value = newBalance;
+			document.getElementById("amount").value = 0;
+			document.getElementById("log").innerHTML = "New balance is $" + newBalance;
+		}
+		
+		function isNumberKey(evt){
+		    var charCode = (evt.which) ? evt.which : event.keyCode
+		    if (charCode > 31 && (charCode < 48 || charCode > 57))
+		        return false;
+		    return true;
+		}
+
+	</script>
+</body>
+</html>
