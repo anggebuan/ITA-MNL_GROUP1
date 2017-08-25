@@ -111,7 +111,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_7gmkt4leEeeavuZg60qiEw" y="15"/>
       </children>
       <element xmi:type="uml:Actor" href="ALLARRA_25AUG17_UML_ATM%20Transaction.uml#_7gi6UIleEeeavuZg60qiEw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7gl9oYleEeeavuZg60qiEw" x="80" y="100" width="61" height="81"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7gl9oYleEeeavuZg60qiEw" x="120" y="100" width="61" height="81"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_9OAsQIlfEeeavuZg60qiEw" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_9OBTUIlfEeeavuZg60qiEw" type="Actor_NameLabel">
@@ -475,8 +475,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_ieGzwYliEeeavuZg60qiEw"/>
       <element xmi:type="uml:Generalization" href="ALLARRA_25AUG17_UML_ATM%20Transaction.uml#_id5YYIliEeeavuZg60qiEw"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ieGzwoliEeeavuZg60qiEw" points="[80, 140, -643984, -643984]$[460, 267, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ieo_QIliEeeavuZg60qiEw" id="(0.9836065573770492,0.49382716049382713)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ieo_QYliEeeavuZg60qiEw" id="(0.1652892561983471,0.11803278688524571)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ieo_QIliEeeavuZg60qiEw" id="(1.0,0.49382716049382713)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ieo_QYliEeeavuZg60qiEw" id="(0.09090909090909091,0.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_8R2eoIliEeeavuZg60qiEw" type="Abstraction_Edge" source="_hG-eMIlhEeeavuZg60qiEw" target="_2pP3YIliEeeavuZg60qiEw">
       <children xmi:type="notation:DecorationNode" xmi:id="_8R2eo4liEeeavuZg60qiEw" type="Abstraction_NameLabel">
