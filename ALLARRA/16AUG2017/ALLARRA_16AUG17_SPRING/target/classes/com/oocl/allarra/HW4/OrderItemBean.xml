@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean name="OrderItems" class="com.oocl.allarra.HW4.A">
+		<property name="o">
+			<bean name="o" class="com.oocl.allarra.HW4.Order">
+				<property name="item" value="Sitaw"></property>
+				<property name="price" value="50.50"></property>
+				<property name="address" value="ZHA"></property>
+			</bean>
+		</property>
+	</bean>
+	 
+</beans>

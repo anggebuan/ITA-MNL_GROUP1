@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Drag and Drop</title>
+<style>
+#content {
+	width: 508px;
+	height: 700px;
+	float: left;
+}
+
+#images {
+	float: left;
+	width: 500px;
+	height: 100%;
+	border: 1px solid #AAA;
+	background-color: rgba(225, 123, 222, 1.0);
+}
+
+#mainRoom {
+	float: left;
+	width: 500px;
+	height: 700px;
+	margin-left: 15px;
+	border: 1px solid #AAA;
+	background-color: rgba(123, 123, 225, 1.0);
+}
+
+.image {
+	width: 100px;
+	height: 100px;
+	border: 1px solid Black;
+	display: inline-block;
+	text-align: right;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.mainZone {
+	z-index: 1;
+}
+</style>
+
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+<script type="text/javascript">
+	Ext.application({
+		launch : function() {
+
+			var images = Ext.get('images').select('div');
+			Ext.each(images.elements, function(el) {
+				var dd = Ext.create('Ext.dd.DD', el, 'imagesDDGroup', {
+					isTarget : false
+				});
+			});
+
+			var mainTarget = Ext.create('Ext.dd.DDTarget', 'mainRoom',
+					'imagesDDGroup', {
+						ignoreSelf : false
+					});
+		}
+	});
+</script>
+
+</head>
+
+<body>
+	<div id="content" style="float: left;">
+		<div id="images">
+			<div>
+				<img src="img/1.jpg" class="image" />
+			</div>
+			<div>
+				<img src="img/2.jpg" class="image" />
+			</div>
+		</div>
+
+	</div>
+	<div id="mainRoom"></div>
+
+
+</body>
+</html>

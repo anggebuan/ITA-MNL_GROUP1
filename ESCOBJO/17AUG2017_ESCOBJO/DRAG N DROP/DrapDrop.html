@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>MyApp</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+  
+    <link rel="stylesheet" href="http://cdn.sencha.com/ext/gpl/4.2.1/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all.css">
+    <script type="text/javascript" src="D:/My Documents/ita docs/EXERCISEs/EXT JS/DRAG N DROP/action.js"></script>
+
+<body>
+
+
+<!--<link rel="stylesheet" type="text/css" href="D:/ESCOBJO/workspace/TryServlet/css/style.css"/>
+<script type="text/javascript" src="action.js">-->
+
+ <script type="text/javascript">
+Ext.application({
+    name: 'DND',
+
+    launch: function() {
+        /*step 1*/
+        var tables = Ext.get('tables').select('div');
+        Ext.each(tables.elements, function(el) {
+            var dd = Ext.create('Ext.dd.DD', el, 'tablesDDGroup', {
+                isTarget: false
+            });
+        });
+	}
+});
+        /*step 2*/
+        //we set the drop targets
+        var mainTarget = Ext.create('Ext.dd.DDTarget', 'mainRoom', 'tablesDDGroup', {
+            ignoreSelf: false
+   
+
+		
+		
+});
+</script>
+
+<style>
+#content{
+    width:80%;
+    height:400px;
+    padding:10px;
+    border:1px solid #000;
+	
+}
+#tables{
+    float:left;
+    width:40%;
+    height:100%;
+    border:1px solid #AAA;
+     background-color:rgba(20, 222, 222, 1.0);
+	
+}
+#mainRoom{
+    float:left;
+    width:55%;
+    height:100%;
+    margin-left:15px;
+    border:1px solid #AAA;
+     background-color:rgba(222, 222, 222, 1.0);
+}
+.table{
+    background-color:rgba(254, 108, 98, 1.0);
+	background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    border-radius:50px;
+    border:3px solid gray;    
+    width:64px;
+    height:64px;
+    margin:10px;
+    color:#FFF;
+    cursor:pointer;
+    text-align:right;
+    display: inline-block;
+}
+.valid-zone{
+    background-color:rgba(157, 229, 86, 1.0) !important;
+}
+.selected{
+    opacity:0.5;
+}
+
+</style>
+</head>
+
+<div id="content">   
+    <div id="tables"> 
+        <div class="table">1</div>
+        <div class="table">2</div>
+        <div class="table">3</div>
+        <div class="table">4</div>
+        
+        <div class="table">5</div>
+        <div class="table">6</div>
+        <div class="table">7</div>
+        <div class="table">8</div>
+        
+        <div class="table">9</div>
+        <div class="table">10</div>
+        <div class="table">11</div>
+        <div class="table">12</div>
+    </div>
+     <div id="mainRoom"></div>
+</div>
+</body>
+</html>

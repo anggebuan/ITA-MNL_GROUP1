@@ -1,0 +1,30 @@
+{
+    "type": "neptunethemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyNeptuneTheme"
+    },
+    "designerId": "098cee66-9e32-4f75-a6bd-f66042072dca",
+    "storage": {
+        "needsCompile": true,
+        "simple": {
+            "pkgVersion": 1
+        },
+        "nameIndex": 1,
+        "varData": {
+            "Ext.panel.Panel": {
+                "globalVars": [
+                    {
+                        "name": "panel-frame-header-inner-border-color",
+                        "enabled": true,
+                        "value": "rgba(170,51,51,1)"
+                    }
+                ]
+            }
+        }
+    }
+}

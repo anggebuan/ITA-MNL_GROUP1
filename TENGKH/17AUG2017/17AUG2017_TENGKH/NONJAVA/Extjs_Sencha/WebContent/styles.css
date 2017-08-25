@@ -1,0 +1,32 @@
+#content {
+	width: 800px;
+	height: 400px;
+	padding: 10px;
+	border: 1px dotted #000;
+}
+
+#images {
+	float: left;
+	width: 40%;
+	height: 100%;
+	border: 1px solid Black;
+	background-color: black;
+}
+
+#mainRoom {
+	float: left;
+	width: 55%;
+	height: 100%;
+	margin-left: 15px;
+	border: 1px solid Black;
+	background-color: silver;
+}
+
+.image {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	cursor: pointer;
+	border: 1px thin Black;
+	display: inline-block;
+}

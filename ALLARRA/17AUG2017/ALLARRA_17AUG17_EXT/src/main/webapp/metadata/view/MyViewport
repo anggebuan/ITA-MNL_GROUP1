@@ -1,0 +1,155 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|snapToGrid": 10,
+        "designer|userClassName": "MyViewport",
+        "layout": "absolute"
+    },
+    "designerId": "304a5eee-5379-4ed0-8556-92c156e9236f",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 380,
+                "layout": "absolute",
+                "layout|x": -7,
+                "layout|y": 110,
+                "title": "Panel1",
+                "width": 520
+            },
+            "designerId": "4c60f776-b0ed-4cd5-834e-f23ea7fc8d27"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 380,
+                "layout": "absolute",
+                "layout|x": 540,
+                "layout|y": 110,
+                "title": "Panel2",
+                "width": 688
+            },
+            "designerId": "70be7bcc-9de0-4933-82af-f4e4d9ca693c"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 20,
+                "layout|y": 200,
+                "src": "app/view/img1.jpg",
+                "width": 100
+            },
+            "designerId": "c4fc938a-7924-4fde-8112-ad3cfd9527ec"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 150,
+                "layout|y": 210,
+                "src": "app/view/img2.jpg",
+                "width": 100
+            },
+            "designerId": "77c2431c-f076-49f2-8ba3-85d1d98eea73"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 290,
+                "layout|y": 220,
+                "src": "app/view/img3.jpg",
+                "width": 100
+            },
+            "designerId": "9d525a64-c6b4-4378-ad31-f2bbe7ffb2e2"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 290,
+                "layout|y": 350,
+                "src": "app/view/img1.jpg",
+                "width": 100
+            },
+            "designerId": "add0930b-eb89-456d-9725-8820fb85bca0"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 10,
+                "layout|y": 350,
+                "src": "app/view/img4.jpg",
+                "width": 100
+            },
+            "designerId": "fb60d1d8-bd15-4f94-a640-7d7499e98d42"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": true,
+                "height": 80,
+                "layout|x": 150,
+                "layout|y": 350,
+                "src": "app/view/img5.jpg",
+                "width": 100
+            },
+            "designerId": "450b7e39-faf5-4af8-a819-e8c8e9e549c3"
+        }
+    ]
+}

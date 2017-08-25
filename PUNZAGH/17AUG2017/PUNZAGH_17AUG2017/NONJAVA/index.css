@@ -1,0 +1,51 @@
+    body  {
+ 
+    }
+
+    .availableLot {
+
+        border:                1px solid #999999;
+        padding:               10px;
+        height:               380px;
+		width: 650px;
+
+
+    }
+
+
+    .completed {
+        width: 650px;
+    }
+
+    .availableLot div {
+        -moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        background-color:      #FFFFFF;
+        cursor:                move;
+        text-align:            center;
+    }
+
+    #mons div{
+		float:left;
+    }
+
+   #completed div {
+        float:  left;
+        /*padding:           3px;*/
+
+    }
+
+    .imgThumb {
+        height:  120px;
+        width:   160px;
+        border: 1px solid #777777;
+    }
+
+
+    .dropOK {
+        background-color: #99ff99 !important;
+    }
+
+    .dropNotOK {
+        border: 1px solid #FF0000 !important;
+    }
