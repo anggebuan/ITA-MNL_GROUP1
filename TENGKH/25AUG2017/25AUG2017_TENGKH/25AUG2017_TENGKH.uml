@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_iHxwsIldEeeC9NpGwDzs_g" name="25AUG2017_TENGKH">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_iJkgcIldEeeC9NpGwDzs_g" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_iKgUkIldEeeC9NpGwDzs_g" name="Activity1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jtUyMIldEeeC9NpGwDzs_g" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Uf0l4IlgEeeC9NpGwDzs_g" general="_CFuCEIlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vqmcgIldEeeC9NpGwDzs_g" name="Administration">
+    <generalization xmi:type="uml:Generalization" xmi:id="_EClh8IlhEeeC9NpGwDzs_g" general="_9KGAIIlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vykswIldEeeC9NpGwDzs_g" name="Bank"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_0bvQQIldEeeC9NpGwDzs_g" name="Bank Transaction System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k7q0oIldEeeC9NpGwDzs_g" name="Withdraw Funds">
+      <extend xmi:type="uml:Extend" xmi:id="_5aU_QIlfEeeC9NpGwDzs_g" extendedCase="_x1qT8IlfEeeC9NpGwDzs_g" extensionLocation="_5aVmUIlfEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lLYEkIldEeeC9NpGwDzs_g" name="Deposit Funds">
+      <extend xmi:type="uml:Extend" xmi:id="_6ybaoIlfEeeC9NpGwDzs_g" extendedCase="_x1qT8IlfEeeC9NpGwDzs_g" extensionLocation="_6ycBsIlfEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ldAnIIldEeeC9NpGwDzs_g" name="Transfer Funds">
+      <include xmi:type="uml:Include" xmi:id="_xZJXEIlfEeeC9NpGwDzs_g" addition="_kLF20IleEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nuBngIldEeeC9NpGwDzs_g" name="Maintenance">
+      <include xmi:type="uml:Include" xmi:id="_WAY2MIlfEeeC9NpGwDzs_g" addition="_MdT9cIlfEeeC9NpGwDzs_g"/>
+      <include xmi:type="uml:Include" xmi:id="_Wd0ZEIlfEeeC9NpGwDzs_g" addition="_MLLEkIlfEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ng5xgIldEeeC9NpGwDzs_g" name="Check Balance">
+      <extend xmi:type="uml:Extend" xmi:id="_9VAFEIlfEeeC9NpGwDzs_g" extendedCase="_x1qT8IlfEeeC9NpGwDzs_g" extensionLocation="_9VAsIIlfEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_n6c58IldEeeC9NpGwDzs_g" name="Repair">
+      <include xmi:type="uml:Include" xmi:id="_XEkQAIlfEeeC9NpGwDzs_g" addition="_MLLEkIlfEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kLF20IleEeeC9NpGwDzs_g" name="3rd Party Account Verfication">
+      <extend xmi:type="uml:Extend" xmi:id="_98zE4IlfEeeC9NpGwDzs_g" extendedCase="_x1qT8IlfEeeC9NpGwDzs_g" extensionLocation="_98zr8IlfEeeC9NpGwDzs_g"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_r6NpMIlfEeeC9NpGwDzs_g" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MLLEkIlfEeeC9NpGwDzs_g" name="System Diagnose"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MdT9cIlfEeeC9NpGwDzs_g" name="Optimization"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_x1qT8IlfEeeC9NpGwDzs_g" name="Account Update">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_5aVmUIlfEeeC9NpGwDzs_g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6ycBsIlfEeeC9NpGwDzs_g" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9VAsIIlfEeeC9NpGwDzs_g" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_98zr8IlfEeeC9NpGwDzs_g" name="ExtensionPoint4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CFuCEIlgEeeC9NpGwDzs_g" name="Account Verification"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9KGAIIlgEeeC9NpGwDzs_g" name="Account Authorization"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_voxJIIlgEeeC9NpGwDzs_g" memberEnd="_vo66IIlgEeeC9NpGwDzs_g _vo8IQIlgEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_voyXQIlgEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_voy-UIlgEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vo66IIlgEeeC9NpGwDzs_g" name="withdraw funds" type="_k7q0oIldEeeC9NpGwDzs_g" association="_voxJIIlgEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vo8IQIlgEeeC9NpGwDzs_g" name="account verification" type="_CFuCEIlgEeeC9NpGwDzs_g" association="_voxJIIlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_65pngIlgEeeC9NpGwDzs_g" memberEnd="_65qOkolgEeeC9NpGwDzs_g _65qOk4lgEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_65qOkIlgEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_65qOkYlgEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_65qOkolgEeeC9NpGwDzs_g" name="deposit funds" type="_lLYEkIldEeeC9NpGwDzs_g" association="_65pngIlgEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_65qOk4lgEeeC9NpGwDzs_g" name="account verification" type="_CFuCEIlgEeeC9NpGwDzs_g" association="_65pngIlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7bIj8IlgEeeC9NpGwDzs_g" memberEnd="_7bJLAolgEeeC9NpGwDzs_g _7bJLA4lgEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7bJLAIlgEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7bJLAYlgEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7bJLAolgEeeC9NpGwDzs_g" name="transfer funds" type="_ldAnIIldEeeC9NpGwDzs_g" association="_7bIj8IlgEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7bJLA4lgEeeC9NpGwDzs_g" name="account verification" type="_CFuCEIlgEeeC9NpGwDzs_g" association="_7bIj8IlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_72EzgIlgEeeC9NpGwDzs_g" memberEnd="_72FakolgEeeC9NpGwDzs_g _72Fak4lgEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_72FakIlgEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_72FakYlgEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_72FakolgEeeC9NpGwDzs_g" name="check balance" type="_ng5xgIldEeeC9NpGwDzs_g" association="_72EzgIlgEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_72Fak4lgEeeC9NpGwDzs_g" name="account verification" type="_CFuCEIlgEeeC9NpGwDzs_g" association="_72EzgIlgEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C50jEIlhEeeC9NpGwDzs_g" memberEnd="_C51KIYlhEeeC9NpGwDzs_g _C51KIolhEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C50jEYlhEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C51KIIlhEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C51KIYlhEeeC9NpGwDzs_g" name="repair" type="_n6c58IldEeeC9NpGwDzs_g" association="_C50jEIlhEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C51KIolhEeeC9NpGwDzs_g" name="account authorization" type="_9KGAIIlgEeeC9NpGwDzs_g" association="_C50jEIlhEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DatCkIlhEeeC9NpGwDzs_g" memberEnd="_DatpoYlhEeeC9NpGwDzs_g _DatpoolhEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DatCkYlhEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DatpoIlhEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DatpoYlhEeeC9NpGwDzs_g" name="maintenance" type="_nuBngIldEeeC9NpGwDzs_g" association="_DatCkIlhEeeC9NpGwDzs_g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DatpoolhEeeC9NpGwDzs_g" name="account authorization" type="_9KGAIIlgEeeC9NpGwDzs_g" association="_DatCkIlhEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bTNd4IljEeeC9NpGwDzs_g" name="BankAccount">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hHxdgIljEeeC9NpGwDzs_g" name="toDeposit"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iUiLkIljEeeC9NpGwDzs_g" name="toWithdraw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kBHpMIljEeeC9NpGwDzs_g" name="toCheckBalance"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mQzz4IljEeeC9NpGwDzs_g" name="BankAccount"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_c-5joIljEeeC9NpGwDzs_g" name="double: balance"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pKpHwIljEeeC9NpGwDzs_g" name="Bank">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bmP5MolkEeeC9NpGwDzs_g" name="customer" type="_CclGEIlkEeeC9NpGwDzs_g" association="_bmPSIIlkEeeC9NpGwDzs_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bmRHUIlkEeeC9NpGwDzs_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bmRHUYlkEeeC9NpGwDzs_g" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vIRj0IljEeeC9NpGwDzs_g" name="addCustomer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yaOcwIljEeeC9NpGwDzs_g" name="readCustomer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zM5P0IljEeeC9NpGwDzs_g" name="findCustomer"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_36m8IIljEeeC9NpGwDzs_g" name="string: customer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CclGEIlkEeeC9NpGwDzs_g" name="Customer">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dqOjI4lkEeeC9NpGwDzs_g" name="bankaccount" type="_bTNd4IljEeeC9NpGwDzs_g" association="_dqOjIIlkEeeC9NpGwDzs_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dqOjJIlkEeeC9NpGwDzs_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dqOjJYlkEeeC9NpGwDzs_g" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GuRkwIlkEeeC9NpGwDzs_g" name="customerMatch"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LXWosIlkEeeC9NpGwDzs_g" name="getBankAccount"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_OtCyIIlkEeeC9NpGwDzs_g" name="int: customernumber"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_UEIyoIlkEeeC9NpGwDzs_g" name="int: pin"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bmPSIIlkEeeC9NpGwDzs_g" memberEnd="_bmP5MolkEeeC9NpGwDzs_g _bmRHUolkEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bmP5MIlkEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bmP5MYlkEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bmRHUolkEeeC9NpGwDzs_g" name="bank" type="_pKpHwIljEeeC9NpGwDzs_g" association="_bmPSIIlkEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dqOjIIlkEeeC9NpGwDzs_g" memberEnd="_dqOjI4lkEeeC9NpGwDzs_g _dqPKMIlkEeeC9NpGwDzs_g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqOjIYlkEeeC9NpGwDzs_g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dqOjIolkEeeC9NpGwDzs_g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dqPKMIlkEeeC9NpGwDzs_g" name="customer" type="_CclGEIlkEeeC9NpGwDzs_g" association="_dqOjIIlkEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3GXmUIlkEeeC9NpGwDzs_g" name="Student">
+    <generalization xmi:type="uml:Generalization" xmi:id="_XA2JcIlmEeeC9NpGwDzs_g" general="_4XWGAIlkEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_Z4DAEIlmEeeC9NpGwDzs_g" general="_fCYzcIllEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_aZcc8IlmEeeC9NpGwDzs_g" general="_O8-2IIllEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_biV-sIlmEeeC9NpGwDzs_g" general="_RgpFsIllEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_y72bwIlmEeeC9NpGwDzs_g" general="_IxYaEIlmEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_PzyTkIlrEeeC9NpGwDzs_g" general="_L0aT8IlrEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_797yMIlkEeeC9NpGwDzs_g" name="Professor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_p1XYYIlmEeeC9NpGwDzs_g" general="_naXLAIllEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_qiJl4IlmEeeC9NpGwDzs_g" general="_m00N8IllEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_q-KMcIlmEeeC9NpGwDzs_g" general="_nFg8YIllEeeC9NpGwDzs_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_McwfoIlmEeeC9NpGwDzs_g" name="University UseCase">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4XWGAIlkEeeC9NpGwDzs_g" name="Enroll Course"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fCYzcIllEeeC9NpGwDzs_g" name="Attend Course"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_O8-2IIllEeeC9NpGwDzs_g" name="Drop Course"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RgpFsIllEeeC9NpGwDzs_g" name="Pay Course Fee"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_IxYaEIlmEeeC9NpGwDzs_g" name="View Online Grade">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uAnQ0IlmEeeC9NpGwDzs_g" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_naXLAIllEeeC9NpGwDzs_g" name="Produce teaching materials"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_m00N8IllEeeC9NpGwDzs_g" name="Teach Course"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nFg8YIllEeeC9NpGwDzs_g" name="Produce Student Grade">
+      <include xmi:type="uml:Include" xmi:id="_ttHtEIlmEeeC9NpGwDzs_g" addition="_oU_KwIlmEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oU_KwIlmEeeC9NpGwDzs_g" name="Input marks">
+      <extend xmi:type="uml:Extend" xmi:id="_uAmpwIlmEeeC9NpGwDzs_g" extendedCase="_osercIlrEeeC9NpGwDzs_g" extensionLocation="_uAnQ0IlmEeeC9NpGwDzs_g"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sx3lwYlmEeeC9NpGwDzs_g" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_L0aT8IlrEeeC9NpGwDzs_g" name="Request University Student Online Account Access"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SCYSEIlrEeeC9NpGwDzs_g" name="Grants Acceses"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZnzyYIlrEeeC9NpGwDzs_g" name="System Online Maintenace">
+      <extend xmi:type="uml:Extend" xmi:id="_wj0bIIlrEeeC9NpGwDzs_g" extendedCase="_osercIlrEeeC9NpGwDzs_g" extensionLocation="_wj1CMIlrEeeC9NpGwDzs_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_j4A24IlrEeeC9NpGwDzs_g" client="_L0aT8IlrEeeC9NpGwDzs_g" supplier="_SCYSEIlrEeeC9NpGwDzs_g"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_osercIlrEeeC9NpGwDzs_g" name="System Updates">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wj1CMIlrEeeC9NpGwDzs_g" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_yinqIIlrEeeC9NpGwDzs_g" addition="_IxYaEIlmEeeC9NpGwDzs_g"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Q7WYkIlrEeeC9NpGwDzs_g" name="Administrator">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eCiRQIlrEeeC9NpGwDzs_g" general="_SCYSEIlrEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_nBmeAIlrEeeC9NpGwDzs_g" general="_ZnzyYIlrEeeC9NpGwDzs_g"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_rUG1AIlrEeeC9NpGwDzs_g" general="_osercIlrEeeC9NpGwDzs_g"/>
+  </packagedElement>
+</uml:Model>
