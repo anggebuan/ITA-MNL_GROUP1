@@ -5,11 +5,7 @@
   <packagedElement xmi:type="uml:Activity" xmi:id="_9uab4IllEeeavuZg60qiEw" name="Activity2"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_G09CQIlpEeeavuZg60qiEw" name="Student">
     <generalization xmi:type="uml:Generalization" xmi:id="_5Cp6kIlpEeeavuZg60qiEw" general="_mVqP8IlpEeeavuZg60qiEw"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_5qRUMIlpEeeavuZg60qiEw" general="_KUXIYIlpEeeavuZg60qiEw"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_7e1pIIlpEeeavuZg60qiEw" general="_Ms8wYIlpEeeavuZg60qiEw"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_-W4NQIlpEeeavuZg60qiEw" general="_Sm60cIlpEeeavuZg60qiEw"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="__cKaUIlpEeeavuZg60qiEw" general="_tC1SkIlpEeeavuZg60qiEw"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_RSCPsIlqEeeavuZg60qiEw" general="_OGhV8IlqEeeavuZg60qiEw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_yPVTAIlxEeeavuZg60qiEw" general="_OGhV8IlqEeeavuZg60qiEw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_IFXhQIlpEeeavuZg60qiEw" name="University">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KUXIYIlpEeeavuZg60qiEw" name="Enroll Subjects"/>
@@ -45,6 +41,11 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_DQ4-QYlsEeeavuZg60qiEw" general="_1JnzgIlpEeeavuZg60qiEw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_IPatwIlsEeeavuZg60qiEw" client="_DQ4-QIlsEeeavuZg60qiEw" supplier="_UJtncIlqEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_f0jZwIlxEeeavuZg60qiEw" client="_OGhV8IlqEeeavuZg60qiEw" supplier="_mVqP8IlpEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_zUeWIIlxEeeavuZg60qiEw" client="_OGhV8IlqEeeavuZg60qiEw" supplier="_KUXIYIlpEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_0nTP8IlxEeeavuZg60qiEw" client="_OGhV8IlqEeeavuZg60qiEw" supplier="_Ms8wYIlpEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_1Jk2kIlxEeeavuZg60qiEw" client="_OGhV8IlqEeeavuZg60qiEw" supplier="_Sm60cIlpEeeavuZg60qiEw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_12JBoIlxEeeavuZg60qiEw" client="_OGhV8IlqEeeavuZg60qiEw" supplier="_tC1SkIlpEeeavuZg60qiEw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_zLf58IlpEeeavuZg60qiEw" name="Registrar">
     <generalization xmi:type="uml:Generalization" xmi:id="_EtZDYIlqEeeavuZg60qiEw" general="_ZqXpEIlpEeeavuZg60qiEw"/>
